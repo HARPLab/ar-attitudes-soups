@@ -307,7 +307,7 @@ def make_cross_df(df, fn):
         df_new = df[cols]
         df_new = pd.melt(df_new)
 
-        df_new['question'] = pd.Series([col for x in range(len(df_new.index))])
+        df_new['question'] = pd.Series([label_of[col] for x in range(len(df_new.index))])
         df_new['context'] = df_new.apply(lambda row: context_map[cols.index(row['variable'])], axis=1)
 
         # df_new['context'] = pd.Series([col for x in cols.index(df_new['variable'])])
@@ -325,15 +325,16 @@ def make_cross_df(df, fn):
 def make_boxplot_2way(df, title):
     graph_type = "boxplot"
     plt.figure()
-
-    print(df)
-
     print("\tMAKING BOXPLOT - 2WAY")
     # print(df.values)
     # bx = sns.boxplot(x="variable", y="value", data=df)
     # sorted_index = df.median().sort_values().index
     # print(sorted_index)
     bx = sns.boxplot(data=df, x='question', y='value', hue='context', ) #, order=cat_order)
+
+    n = len(pd.unique(df['question']))
+
+
 
     plt.tight_layout()
     # title = al_title[analysis] + "\n" + al_y_range
