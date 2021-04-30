@@ -13,6 +13,7 @@ import pingouin as pg
 import copy
 import seaborn as sns
 import numpy as np
+import os
 
 '''
 CONSTANTS and FLAGS
@@ -43,6 +44,13 @@ OUTPUT_CALC_ANOVA = True
 #        'Q73_4', 'Q77', 'Q92_1', 'Q92_2', 'Q92_3', 'Q86', 'Q76', 'Q96', 'Q98',
 #        'Q94', 'Q107', 'Q1_28', 'Q2', 'Q2_11_TEXT', 'Q3', 'Q111', 'Q5']
 
+mapping = {}
+mapping['Extremely uncomfortable']                  = -2
+mapping['Somewhat uncomfortable']                   = -1
+mapping['Neither comfortable nor uncomfortable']    = 0
+mapping['Somewhat comfortable']                     = 1
+mapping['Extremely comfortable']                    = 2
+
 COL_CONSENT     = 'Q72'
 COL_PROLIFIC_ID = 'Q70'
 COL_DURATION    = 'Duration (in seconds)'
@@ -70,7 +78,7 @@ COL_VIS_OBJ_SEX     = 'Q68'
 COL_VIS_OBJ_MESSY   = 'Q69'
 COL_VIS_OBJ_LICENSE = 'Q72'
 COL_LOCATION        = 'Q70'
-COL_PAYMENT         = 'Q74'
+COL_PAYMENT         = 'Q74.1'
 
 COL_RANK_DATA = 'Q73x'
 COL_RANK_APPS = 'Q92'
@@ -125,7 +133,7 @@ D_PAYMENT           = (COL_PAYMENT,           LABEL_PAYMENT)
 
 
 SOLO_ANALYSES = [D_VIS_FACE_CORE, D_AUD_INTENTIONAL, D_AUD_BACKGROUND, D_VIS_PUPIL, 
-                D_VIS_BKGD_OTHERS, D_VIS_BKGD_OTHERS, D_VIS_FACE_ALG, D_VIS_NN_INTENT, 
+                D_VIS_BKGD_OTHERS, D_VIS_BKGD_ME, D_VIS_FACE_ALG, D_VIS_NN_INTENT, 
                 D_VIS_NN_ACCIDENT, D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY,
                 D_VIS_OBJ_LICENSE, D_LOCATION, D_PAYMENT]
 
@@ -141,16 +149,15 @@ def create_dir(filename):
     except OSError as error:
         print("Export repositories already created")    
 
-if FLAG_EXPORT:
-    create_dir(FILENAME_OUTPUTS)
-    create_dir(FILENAME_PLOTS)
-    create_dir(FILENAME_ANOVAS)
+create_dir(FILENAME_OUTPUTS)
+create_dir(FILENAME_PLOTS)
+create_dir(FILENAME_ANOVAS)
 
 
 df = pd.read_csv('finalsurveyresults.csv')
 print("Pandas data imported from CSV")
 
-print(df)
+# print(df)
 
 #Get the set of uniqueids (no duplicates)
 idSet = set()
@@ -159,7 +166,7 @@ for ind in df.index: #how to iterate through rows
     idSet.add(row['ResponseId'])
     
 print("Number of participants: " + str(len(idSet)))
-print("participants: "+ str(idSet))
+print()
 
 ageList = []
 for ind in df.index: #how to iterate through rows
@@ -172,27 +179,20 @@ for ind in df.index: #how to iterate through rows
    row = df.loc[ind]
    genderList.append(row[COL_DEMO_GENDER])
 
-print("Ages: ")
-for item in ageList:
-   print(item)
+# print("Ages: ")
+# for item in ageList:
+#    print(item)
 
-print("Genders: ")
-for item in genderList:
-   print(item)
+# print("Genders: ")
+# for item in genderList:
+#    print(item)
 
-
-
-def analyze_all_participants(df):
-    print(df.shape)
-    
-    df.loc[:, df.dtypes == 'float64']   = df.loc[:, df.dtypes == 'float64'].astype('float')
-    df.loc[:, df.dtypes == 'int64']     = df.loc[:, df.dtypes == 'int64'].astype('int')
-
-    print("Time to make some graphs \n")
-    return df
-
+categorical_cols = []
 
 def make_anova(df, analysis_label, fn, title):
+
+
+
     SIGNIFICANCE_CUTOFF = .4
     if OUTPUT_CALC_ANOVA:
         anova_text = title + "\n"
@@ -247,24 +247,29 @@ def make_anova(df, analysis_label, fn, title):
         f.write(anova_text)
         f.close()
 
-def make_boxplot(df, analysis, fn, title):
-    if OUTPUT_GRAPH_BOXPLOT:
-        graph_type = "boxplot"
-        plt.figure()
-        # plt.tight_layout()
-        # title = al_title[analysis] + "\n" + al_y_range
-        bx = sns.boxplot(data=df, x=COL_PATHING, y=analysis, hue=COL_CHAIR, order=cat_order)
-        # print("San check on data")
-        # print(df[analysis])
-        # print(df[analysis].columns)
+def make_boxplot(df, cols, title, fn):
+    graph_type = "boxplot"
+    plt.figure()
 
-        bx.set(xlabel='Pathing Method')
-        ylims = al_y_range[analysis]
-        bx.set(ylim=ylims)
-        bx.set(title=title, ylabel=al_y_units[analysis])
-        figure = bx.get_figure()    
-        figure.savefig(FILENAME_PLOTS + fn + graph_type + '.png', bbox_inches='tight')
-        plt.close()
+    df = df[cols]
+
+    print("MAKING BOXPLOT")
+    # print(df.values)
+    bx = sns.boxplot(x="variable", y="value", data=pd.melt(df))
+
+    # plt.tight_layout()
+    # title = al_title[analysis] + "\n" + al_y_range
+    # bx = sns.boxplot(data=df, x=COL_PATHING, y=analysis, hue=COL_CHAIR, order=cat_order)
+    # print("San check on data")
+    # print(df[analysis])
+    # print(df[analysis].columns)
+
+    bx.set(xlabel='Context')
+    bx.set(title=title, ylabel="Comfort level")
+    # bx.set(xticks=['Social\n (SnapChat)', "Commercial\n (Warby Parker)", "Medical\n (PostureScreen)"])
+    figure = bx.get_figure()    
+    figure.savefig(FILENAME_PLOTS + fn + '.png', bbox_inches='tight')
+    plt.close()
 
 def make_stripplot(df, analysis, fn, title):
     if OUTPUT_GRAPH_STRIPPLOT:
@@ -284,29 +289,43 @@ def make_stripplot(df, analysis, fn, title):
             figure.savefig(FILENAME_PLOTS + fn + graph_type + '.png', bbox_inches='tight')
             plt.close()
 
-def inspect_troublemakers(df_analyzed, list_of_lookup_packets):
-    # print(df_analyzed[P_LOOKUP])
+def get_subcols(col):
+    vals = col.split(".")
+    col = vals[0]
+    suffix = ''
+    if len(vals) > 1:
+        suffix = '.' + vals[1]
 
-    for t in list_of_lookup_packets:
-        df_trouble = df_analyzed[df_analyzed[P_LOOKUP] == t]
-        df_trouble = df_trouble.iloc[0]
+    cols = [col + SUFFIX_SNAP + suffix, col + SUFFIX_WARBY + suffix, col + SUFFIX_MED + suffix]
 
-        # Should only be one
-        t_id = t
-        t_id = t_id.replace("(", "")
-        t_id = t_id.replace(")", "")
-        t_id = t_id.replace("\'", "")
-        t_id = t_id.replace(", ", "-")
-        print("Found and generating raw slider log for " + t_id)
+    return cols
 
-        fn = "trouble-" + t_id + ".png"
-        plot_analysis_one_participant(df_trouble, t, fn)
-        # Add dirty data marker, too
+# drop text label row
+df = df.drop(1)
+# drop header row
+df = df.drop(0)
+print(df.columns)
+
+for analysis in SOLO_ANALYSES:
+    print(analysis)
+    col, label = analysis
+    fn = col
+    cols = get_subcols(col)
+
+    for col in cols:
+        print(col)
+        df[col] = [mapping[item] for item in df[col]]
 
 
-'''
- END: METHOD DECLARATIONS
-'''
+    make_boxplot(df, cols, label, fn)
+    make_anova(df, cols, label, fn)
+
+
+
+for cross in CROSS_ANALYSIS:
+    print(cross)
+
+
 
 
 print("FINISHED")
