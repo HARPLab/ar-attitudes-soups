@@ -210,7 +210,6 @@ def make_anova(df, cols, title, fn):
     homogenous_data = False
 
     if not homogenous_data:
-        print("~~~ ANALYSIS FOR " + title + " ~~~")
         aov = pg.anova(dv='value', between='variable', data=df_col)
         aov.round(3)
 
@@ -305,6 +304,8 @@ df = df.drop(1)
 df = df.drop(0)
 print(df.columns)
 
+sus = [D_VIS_NN_ACCIDENT, D_VIS_OBJ_SEX, D_VIS_OBJ_LICENSE]
+
 for analysis in SOLO_ANALYSES:
     print(analysis)
     col, label = analysis
@@ -316,10 +317,12 @@ for analysis in SOLO_ANALYSES:
         df[col] = [mapping[item] for item in df[col]]
 
     df_cols = df[cols]
-
     make_boxplot(df_cols, cols, label, fn)
     make_anova(df_cols, cols, label, fn)
 
+    if analysis in sus:
+        # print(df_cols)
+        pass
 
 
 for cross in CROSS_ANALYSIS:
