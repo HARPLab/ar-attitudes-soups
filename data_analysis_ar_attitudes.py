@@ -207,6 +207,7 @@ def make_anova(df, cols, title, fn):
 
     df_col = df[cols]
     df_col = pd.melt(df)
+    df_col['context'] = df_col.apply(lambda row: context_map[cols.index(row['variable'])], axis=1)
 
     # print(df_col)
     # df_col.columns == ['variable', 'value']
@@ -217,13 +218,15 @@ def make_anova(df, cols, title, fn):
     homogenous_data = False
 
     if not homogenous_data:
-        aov = pg.anova(dv='value', between='variable', data=df_col)
+        aov = pg.anova(dv='value', between='context', data=df_col)
         aov.round(3)
 
         anova_text = anova_text + str(aov)
         aov.to_csv(FILENAME_ANOVAS + fn + '-anova.csv')
 
-        p_vals = aov['p-unc']
+        p_val = aov['p-unc'][0]
+        print("\t\t" + title)
+        print("\t\t" + 'Across contexts:' + "->" + " p=" + str(p_val))
 
         # if p_chair < SIGNIFICANCE_CUTOFF:
         #     print("Chair position is significant for " + analysis_label + ": " + str(p_chair))
@@ -318,7 +321,6 @@ def make_cross_df(df, fn):
             df_total = df_total.append(df_new)
 
 
-    print(df_total)
     # df_total['value'] = [mapping[item] for item in df_total['value']]
     return df_total
 
@@ -443,22 +445,32 @@ for col in SOLO_ANALYSES:
 
     df_cols = df[cols]
 
-    make_boxplot(df_cols, cols, label, fn)
     make_anova(df_cols, cols, label, fn)
+    make_boxplot(df_cols, cols, label, fn)
+    
 
     if col in sus:
         # print(df_cols)
         pass
 
-
+print("\n~~~Making 2-way comparisons~~~")
 for key in CROSS_ANALYSIS.keys():
     cross = CROSS_ANALYSIS[key]
     fn = key
     df_cross = make_cross_df(df, cross)
 
+    print(key)
     make_boxplot_2way(df_cross, fn)
     make_anova_2way(df_cross, fn)
 
+
+print("TODO")
+
+# Sort the categories by mean in boxplot
+# 2way anova and output
+# Display contexts better than with key
+# Bigger graph area overall
+# Y-labels pretty
 
 
 print("FINISHED")
