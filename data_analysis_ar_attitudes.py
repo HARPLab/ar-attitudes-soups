@@ -64,6 +64,8 @@ SUFFIX_SNAP     = '_1'
 SUFFIX_WARBY    = '_2'
 SUFFIX_MED      = '_3'
 
+context_map = ['Social\n (SnapChat)', "Commercial\n (Warby Parker)", "Medical\n (PostureScreen)"]
+
 COL_AUD_INTENTIONAL = 'Q59'
 COL_AUD_BACKGROUND  = 'Q62'
 COL_VIS_FACE_CORE   = 'Q73'
@@ -137,10 +139,13 @@ SOLO_ANALYSES = [D_VIS_FACE_CORE, D_AUD_INTENTIONAL, D_AUD_BACKGROUND, D_VIS_PUP
                 D_VIS_NN_ACCIDENT, D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY,
                 D_VIS_OBJ_LICENSE, D_LOCATION, D_PAYMENT]
 
-CROSS_ANALYSIS = []
-CROSS_ANALYSIS.append([D_AUD_INTENTIONAL,    D_AUD_BACKGROUND])
-CROSS_ANALYSIS.append([D_VIS_NN_INTENT,      D_VIS_NN_ACCIDENT])
-CROSS_ANALYSIS.append([D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY, D_VIS_OBJ_LICENSE])
+CROSS_ANALYSIS = {}
+CROSS_ANALYSIS['audio']         = [D_AUD_INTENTIONAL,    D_AUD_BACKGROUND]
+CROSS_ANALYSIS['near-nudity']   = [D_VIS_NN_INTENT,      D_VIS_NN_ACCIDENT]
+CROSS_ANALYSIS['visual']        = [D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY, D_VIS_OBJ_LICENSE]
+CROSS_ANALYSIS['all']           = [D_VIS_PUPIL, D_VIS_BKGD_OTHERS, D_VIS_BKGD_ME, D_VIS_FACE_ALG, D_VIS_NN_INTENT, 
+                                    D_VIS_NN_ACCIDENT, D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY,
+                                    D_VIS_OBJ_LICENSE]
 
 
 def create_dir(filename):
@@ -287,6 +292,113 @@ def make_stripplot(df, analysis, fn, title):
             figure.savefig(FILENAME_PLOTS + fn + graph_type + '.png', bbox_inches='tight')
             plt.close()
 
+def make_cross_df(df, fn):
+    df_total = None
+
+    for c in cross:
+        col, title = c
+        cols = get_subcols(col)
+        df_new = df[cols]
+        df_new = pd.melt(df_new)
+
+        df_new['question'] = pd.Series([col for x in range(len(df_new.index))])
+        df_new['context'] = df_new.apply(lambda row: context_map[cols.index(row['variable'])], axis=1)
+
+        # df_new['context'] = pd.Series([col for x in cols.index(df_new['variable'])])
+
+        if df_total is None:
+            df_total = df_new
+        else:
+            df_total = df_total.append(df_new)
+
+
+    print(df_total)
+    df_total['value'] = [mapping[item] for item in df_total['value']]
+    return df_total
+
+def make_boxplot_2way(df, title):
+    graph_type = "boxplot"
+    plt.figure()
+
+    print(df)
+
+    print("\tMAKING BOXPLOT - 2WAY")
+    # print(df.values)
+    # bx = sns.boxplot(x="variable", y="value", data=df)
+    bx = sns.boxplot(data=df, x='question', y='value', hue='context') #, order=cat_order)
+
+    plt.tight_layout()
+    # title = al_title[analysis] + "\n" + al_y_range
+    # bx = sns.boxplot(data=df, x=COL_PATHING, y=analysis, hue=COL_CHAIR, order=cat_order)
+    # print("San check on data")
+    # print(df[analysis])
+    # print(df[analysis].columns)
+
+    bx.set(xlabel='Data Type')
+    bx.set(title=title, ylabel="Comfort level")
+    # bx.set(xticks=['Social\n (SnapChat)', "Commercial\n (Warby Parker)", "Medical\n (PostureScreen)"])
+    figure = bx.get_figure()    
+    figure.savefig(FILENAME_PLOTS + title + '-cross.png')#, bbox_inches='tight')
+    plt.close()
+
+def make_anova_2way(df, title):
+    return
+    print("\tMAKING ANOVA")
+
+    SIGNIFICANCE_CUTOFF = .4
+    anova_text = title + "\n"
+    # print("ANOVA FOR ")
+    # print(analysis_label)
+    # print(df[analysis_label])
+
+    df_col = df[cols]
+    df_col = pd.melt(df)
+
+    # print(df_col)
+    # df_col.columns == ['variable', 'value']
+    
+    # val_min = df_col['value'].get(df_col['value'].idxmin())
+    # val_max = df_col['value'].get(df_col['value'].idxmax())
+    # homogenous_data = (val_min == val_max)
+    homogenous_data = False
+
+    if not homogenous_data:
+        aov = pg.anova(dv='value', between='variable', data=df_col)
+        aov.round(3)
+
+        anova_text = anova_text + str(aov)
+        aov.to_csv(FILENAME_ANOVAS + fn + '-anova.csv')
+
+        p_vals = aov['p-unc']
+
+        # if p_chair < SIGNIFICANCE_CUTOFF:
+        #     print("Chair position is significant for " + analysis_label + ": " + str(p_chair))
+        #     # print(title)
+        # if p_path_method < SIGNIFICANCE_CUTOFF:
+        #     print("Pathing method is significant for " + analysis_label + ": " + str(p_path_method))
+        #     # print(title)
+
+        # anova_text = anova_text + "\n"
+        # Verify that subjects is legit
+        # print(df[subject_id])
+
+        # posthocs = pg.pairwise_ttests(dv=analysis_label, within=COL_PATHING, between=COL_CHAIR,
+        #                           subject=subject_id, data=df)
+        # # pg.print_table(posthocs)
+        # anova_text = anova_text + "\n" + str(posthocs)
+        # posthocs.to_csv(FILENAME_ANOVAS + fn + 'posthocs.csv')
+        # print()
+
+    else:
+        print("! Issue creating ANOVA for " + analysis_label)
+        print("Verify that there are at least a few non-identical values recorded")
+        anova_text = anova_text + "Column homogenous with value " + str(val_min)
+
+
+    f = open(FILENAME_ANOVAS + fn + "-anova.txt", "w")
+    f.write(anova_text)
+    f.close()
+
 def get_subcols(col):
     vals = col.split(".")
     col = vals[0]
@@ -306,12 +418,13 @@ print(df.columns)
 
 sus = [D_VIS_NN_ACCIDENT, D_VIS_OBJ_SEX, D_VIS_OBJ_LICENSE]
 
-for analysis in SOLO_ANALYSES:
+for analysis in []: #SOLO_ANALYSES:
     print(analysis)
     col, label = analysis
     fn = col
     cols = get_subcols(col)
 
+    # Make results numeric for future use
     for col in cols:
         # print(col + " being mapped to ints")
         df[col] = [mapping[item] for item in df[col]]
@@ -325,10 +438,13 @@ for analysis in SOLO_ANALYSES:
         pass
 
 
-for cross in CROSS_ANALYSIS:
-    # Add two-way ANOVA for
-    print(cross)
+for key in CROSS_ANALYSIS.keys():
+    cross = CROSS_ANALYSIS[key]
+    fn = key
+    df_cross = make_cross_df(df, cross)
 
+    make_boxplot_2way(df_cross, fn)
+    make_anova_2way(df_cross, fn)
 
 
 
