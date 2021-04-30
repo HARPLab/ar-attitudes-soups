@@ -189,73 +189,72 @@ for ind in df.index: #how to iterate through rows
 
 categorical_cols = []
 
-def make_anova(df, analysis_label, fn, title):
-
-
+def make_anova(df, cols, title, fn):
+    print("\tMAKING ANOVA")
 
     SIGNIFICANCE_CUTOFF = .4
-    if OUTPUT_CALC_ANOVA:
-        anova_text = title + "\n"
-        # print("ANOVA FOR ")
-        # print(analysis_label)
-        # print(df[analysis_label])
+    anova_text = title + "\n"
+    # print("ANOVA FOR ")
+    # print(analysis_label)
+    # print(df[analysis_label])
 
-        subject_id = 'uniqueid'
+    df_col = df[cols]
+    df_col = pd.melt(df)
 
-        df_col = df[analysis_label]
-        val_min = df_col.get(df_col.idxmin())
-        val_max = df_col.get(df_col.idxmax())
-        homogenous_data = (val_min == val_max)
+    # print(df_col)
+    # df_col.columns == ['variable', 'value']
+    
+    # val_min = df_col['value'].get(df_col['value'].idxmin())
+    # val_max = df_col['value'].get(df_col['value'].idxmax())
+    # homogenous_data = (val_min == val_max)
+    homogenous_data = False
 
-        if not homogenous_data:
-            print("~~~ ANALYSIS FOR " + analysis_label + " ~~~")
-            aov = pg.mixed_anova(dv=analysis_label, between=COL_CHAIR, within=COL_PATHING, subject=subject_id, data=df)
-            aov.round(3)
+    if not homogenous_data:
+        print("~~~ ANALYSIS FOR " + title + " ~~~")
+        aov = pg.anova(dv='value', between='variable', data=df_col)
+        aov.round(3)
 
-            anova_text = anova_text + str(aov)
-            aov.to_csv(FILENAME_ANOVAS + fn + 'anova.csv')
+        anova_text = anova_text + str(aov)
+        aov.to_csv(FILENAME_ANOVAS + fn + 'anova.csv')
 
-            p_vals = aov['p-unc']
-            p_chair = p_vals[0]
-            p_path_method = p_vals[1]
+        p_vals = aov['p-unc']
 
-            if p_chair < SIGNIFICANCE_CUTOFF:
-                print("Chair position is significant for " + analysis_label + ": " + str(p_chair))
-                # print(title)
-            if p_path_method < SIGNIFICANCE_CUTOFF:
-                print("Pathing method is significant for " + analysis_label + ": " + str(p_path_method))
-                # print(title)
+        # if p_chair < SIGNIFICANCE_CUTOFF:
+        #     print("Chair position is significant for " + analysis_label + ": " + str(p_chair))
+        #     # print(title)
+        # if p_path_method < SIGNIFICANCE_CUTOFF:
+        #     print("Pathing method is significant for " + analysis_label + ": " + str(p_path_method))
+        #     # print(title)
 
-            anova_text = anova_text + "\n"
-            # Verify that subjects is legit
-            # print(df[subject_id])
+        # anova_text = anova_text + "\n"
+        # Verify that subjects is legit
+        # print(df[subject_id])
 
-            posthocs = pg.pairwise_ttests(dv=analysis_label, within=COL_PATHING, between=COL_CHAIR,
-                                      subject=subject_id, data=df)
-            # pg.print_table(posthocs)
-            anova_text = anova_text + "\n" + str(posthocs)
-            posthocs.to_csv(FILENAME_ANOVAS + fn + 'posthocs.csv')
-            print()
+        # posthocs = pg.pairwise_ttests(dv=analysis_label, within=COL_PATHING, between=COL_CHAIR,
+        #                           subject=subject_id, data=df)
+        # # pg.print_table(posthocs)
+        # anova_text = anova_text + "\n" + str(posthocs)
+        # posthocs.to_csv(FILENAME_ANOVAS + fn + 'posthocs.csv')
+        # print()
 
-        else:
-            print("! Issue creating ANOVA for " + analysis_label)
-            print("Verify that there are at least a few non-identical values recorded")
-            anova_text = anova_text + "Column homogenous with value " + str(val_min)
+    else:
+        print("! Issue creating ANOVA for " + analysis_label)
+        print("Verify that there are at least a few non-identical values recorded")
+        anova_text = anova_text + "Column homogenous with value " + str(val_min)
 
 
-        f = open(FILENAME_ANOVAS + fn + "anova.txt", "w")
-        f.write(anova_text)
-        f.close()
+    f = open(FILENAME_ANOVAS + fn + "-anova.txt", "w")
+    f.write(anova_text)
+    f.close()
 
 def make_boxplot(df, cols, title, fn):
     graph_type = "boxplot"
     plt.figure()
 
-    df = df[cols]
-
-    print("MAKING BOXPLOT")
+    df_new = df[cols]
+    print("\tMAKING BOXPLOT")
     # print(df.values)
-    bx = sns.boxplot(x="variable", y="value", data=pd.melt(df))
+    bx = sns.boxplot(x="variable", y="value", data=pd.melt(df_new))
 
     # plt.tight_layout()
     # title = al_title[analysis] + "\n" + al_y_range
@@ -313,16 +312,18 @@ for analysis in SOLO_ANALYSES:
     cols = get_subcols(col)
 
     for col in cols:
-        print(col)
+        # print(col + " being mapped to ints")
         df[col] = [mapping[item] for item in df[col]]
 
+    df_cols = df[cols]
 
-    make_boxplot(df, cols, label, fn)
-    make_anova(df, cols, label, fn)
+    make_boxplot(df_cols, cols, label, fn)
+    make_anova(df_cols, cols, label, fn)
 
 
 
 for cross in CROSS_ANALYSIS:
+    # Add two-way ANOVA for
     print(cross)
 
 
