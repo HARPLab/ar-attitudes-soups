@@ -144,10 +144,12 @@ SOLO_ANALYSES = [COL_VIS_FACE_CORE, COL_AUD_INTENTIONAL, COL_AUD_BACKGROUND, COL
 CROSS_ANALYSIS = {}
 CROSS_ANALYSIS['audio']         = [COL_AUD_INTENTIONAL,    COL_AUD_BACKGROUND]
 CROSS_ANALYSIS['near-nudity']   = [COL_VIS_NN_INTENT,      COL_VIS_NN_ACCIDENT]
-CROSS_ANALYSIS['visual']        = [COL_VIS_OBJ_MEDS, COL_VIS_OBJ_SEX, COL_VIS_OBJ_MESSY, COL_VIS_OBJ_LICENSE]
-CROSS_ANALYSIS['all']           = [COL_VIS_PUPIL, COL_VIS_BKGD_OTHERS, COL_VIS_BKGD_ME, COL_VIS_FACE_ALG, COL_VIS_NN_INTENT, 
+CROSS_ANALYSIS['obj']           = [COL_VIS_OBJ_MEDS, COL_VIS_OBJ_SEX, COL_VIS_OBJ_MESSY, COL_VIS_OBJ_LICENSE]
+CROSS_ANALYSIS['visual']        = [COL_VIS_PUPIL, COL_VIS_BKGD_OTHERS, COL_VIS_BKGD_ME, COL_VIS_FACE_ALG, COL_VIS_NN_INTENT, 
                                     COL_VIS_NN_ACCIDENT, COL_VIS_OBJ_MEDS, COL_VIS_OBJ_SEX, COL_VIS_OBJ_MESSY,
                                     COL_VIS_OBJ_LICENSE]
+CROSS_ANALYSIS['face']          = [COL_VIS_FACE_CORE, COL_VIS_FACE_ALG, COL_VIS_BKGD_ME, COL_VIS_BKGD_OTHERS]
+CROSS_ANALYSIS['all']           = SOLO_ANALYSES
 
 
 def create_dir(filename):
@@ -332,11 +334,11 @@ def make_boxplot_2way(df, title):
     # bx = sns.boxplot(x="variable", y="value", data=df)
     # sorted_index = df.median().sort_values().index
     # print(sorted_index)
-    bx = sns.boxplot(data=df, x='question', y='value', hue='context', ) #, order=cat_order)
+    bx = sns.boxplot(data=df, x='question', y='value', hue='context') #, order=cat_order)
 
     n = len(pd.unique(df['question']))
 
-    if n > 5:
+    if n > 3:
         bx.set_xticklabels(bx.get_xticklabels(), rotation=90)
         
 
@@ -356,7 +358,6 @@ def make_boxplot_2way(df, title):
     plt.close()
 
 def make_anova_2way(df, title):
-    return
     print("\tMAKING ANOVA")
 
     SIGNIFICANCE_CUTOFF = .4
@@ -365,8 +366,7 @@ def make_anova_2way(df, title):
     # print(analysis_label)
     # print(df[analysis_label])
 
-    df_col = df[cols]
-    df_col = pd.melt(df)
+    # bx = sns.boxplot(data=df, x='question', y='value', hue='context')
 
     # print(df_col)
     # df_col.columns == ['variable', 'value']
@@ -377,7 +377,7 @@ def make_anova_2way(df, title):
     homogenous_data = False
 
     if not homogenous_data:
-        aov = pg.anova(dv='value', between='variable', data=df_col)
+        aov = pg.anova(dv='value', between=['question', 'context'], data=df)
         aov.round(3)
 
         anova_text = anova_text + str(aov)
