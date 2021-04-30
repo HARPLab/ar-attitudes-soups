@@ -1,0 +1,3 @@
+Other Faces in the Background
+     Source  ddof1  ddof2         F     p-unc       np2
+0  variable      2    132  2.264029  0.107953  0.033166

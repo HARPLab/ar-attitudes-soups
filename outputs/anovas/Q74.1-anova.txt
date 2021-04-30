@@ -1,0 +1,3 @@
+Payment Information
+     Source  ddof1  ddof2         F     p-unc       np2
+0  variable      2    132  0.756718  0.471228  0.011335

@@ -1,0 +1,3 @@
+Pupil Dialation (to assess excitement)
+     Source  ddof1  ddof2         F    p-unc       np2
+0  variable      2    132  1.441975  0.24016  0.021381
