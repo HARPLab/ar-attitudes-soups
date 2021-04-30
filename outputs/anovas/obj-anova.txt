@@ -1,0 +1,8 @@
+obj
+               Source          SS   DF  ...          F         p-unc       np2
+0            question  126.138889    3  ...  42.726029  9.867953e-25  0.195340
+1             context    0.514815    2  ...   0.261569  7.699427e-01  0.000990
+2  question * context    1.100000    6  ...   0.186297  9.806148e-01  0.002113
+3            Residual  519.600000  528  ...        NaN           NaN       NaN
+
+[4 rows x 7 columns]

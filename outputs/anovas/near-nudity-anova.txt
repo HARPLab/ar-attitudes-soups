@@ -1,0 +1,8 @@
+near-nudity
+               Source          SS   DF  ...          F         p-unc       np2
+0            question   37.037037    1  ...  30.282175  8.834102e-08  0.102902
+1             context    0.118519    2  ...   0.048451  9.527120e-01  0.000367
+2  question * context    0.562963    2  ...   0.230145  7.945780e-01  0.001740
+3            Residual  322.888889  264  ...        NaN           NaN       NaN
+
+[4 rows x 7 columns]

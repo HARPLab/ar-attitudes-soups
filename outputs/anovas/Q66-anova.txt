@@ -1,3 +1,3 @@
 Near-Nudity (Intentional)
-     Source  ddof1  ddof2         F     p-unc       np2
-0  variable      2    132  0.174639  0.839954  0.002639
+    Source  ddof1  ddof2         F     p-unc       np2
+0  context      2    132  0.174639  0.839954  0.002639

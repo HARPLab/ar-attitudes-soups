@@ -1,0 +1,8 @@
+audio
+               Source          SS   DF  ...          F         p-unc       np2
+0            question  104.533333    1  ...  66.701901  1.312840e-14  0.201698
+1             context   10.066667    2  ...   3.211731  4.186604e-02  0.023753
+2  question * context    0.466667    2  ...   0.148888  8.617378e-01  0.001127
+3            Residual  413.733333  264  ...        NaN           NaN       NaN
+
+[4 rows x 7 columns]
