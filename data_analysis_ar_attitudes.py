@@ -334,6 +334,9 @@ def make_boxplot_2way(df, title):
 
     n = len(pd.unique(df['question']))
 
+    if n > 5:
+        bx.set_xticklabels(bx.get_xticklabels(), rotation=90)
+        
 
 
     plt.tight_layout()
