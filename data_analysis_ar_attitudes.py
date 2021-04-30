@@ -215,7 +215,7 @@ def make_anova(df, cols, title, fn):
         aov.round(3)
 
         anova_text = anova_text + str(aov)
-        aov.to_csv(FILENAME_ANOVAS + fn + 'anova.csv')
+        aov.to_csv(FILENAME_ANOVAS + fn + '-anova.csv')
 
         p_vals = aov['p-unc']
 
