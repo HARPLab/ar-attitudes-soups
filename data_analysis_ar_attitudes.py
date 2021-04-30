@@ -17,108 +17,169 @@ import numpy as np
 '''
 CONSTANTS and FLAGS
 '''
-FILENAME_OUTPUTS = "outputs/"
-FILENAME_PLOTS = FILENAME_OUTPUTS + "plots/"
-FILENAME_ANOVAS = FILENAME_OUTPUTS + "anovas/"
-FILENAME_PREFIX = ""
 
 FLAG_EXPORT = False
 
-
-# Types of analysis
-A_CORRECT_END = 'correct-end'
-
-A_PCT_UNSURE = 'pct_unsure'
-A_PCT_CORRECT = 'pct_correct'
-A_PCT_INCORRECT = 'pct_incorrect'
-
-A_REVERSALS = 'reversals'
-
-A_ENV_START_THRESHOLD   = 'envelope_start_threshold'
-A_ENV_START_ACC         = 'envelope_start_accuracy'
-A_ENV_START_CERT        = 'envelope_start_certainty'
-
-A_ENV_END_THRESHOLD = 'envelope_end_threshold'
-A_ENV_END_ACC       = 'envelope_end_accuracy'
-A_ENV_END_CERT      = 'envelope_end_certainty'
-
-A_ENV_LEN_THRESHOLD = 'envelope_length_threshold'
-A_ENV_LEN_ACC       = 'envelope_length_accuracy'
-A_ENV_LEN_CERT      = 'envelope_length_certainty'
-
-
-A_TT_CUTOFF = 'tt_cutoff'
-A_TT_ACC = 'tt_accuracy'
-A_TT_CERT = 'tt_certainty'
-
-A_FLIPPED = 'is-flipped'
-
-P_GLITCHES = 'glitches'
-P_POST_EVENTS = 'post-events'
-P_LOOKUP = 'lookup-packet'
-P_QUAL_CHECK = 'qual_check_correct_end'
+FILENAME_OUTPUTS = "outputs/"
+FILENAME_PLOTS = FILENAME_OUTPUTS + "plots/"
+FILENAME_ANOVAS = FILENAME_OUTPUTS + "anovas/"
 
 OUTPUT_GRAPH_BOXPLOT = True
 OUTPUT_GRAPH_STRIPPLOT = True
 OUTPUT_GRAPH_BLENDED = True
 OUTPUT_CALC_ANOVA = True
 
-STATUS_GLITCH_UNSUPPORTED_BROWSER = "unsupported browser"
-STATUS_GLITCH_NO_EVENTS = "no events found"
-STATUS_GLITCH_EVENT_PAST_VIDEO_END = "past video end"
-STATUS_NORMAL = "glitch-free"
+# For reference, the columns of the input are:
+# columns = 'StartDate', 'EndDate', 'Status', 'Progress', 'Duration (in seconds)',
+#        'Finished', 'RecordedDate', 'ResponseId', 'DistributionChannel',
+#        'UserLanguage', 'Q_RecaptchaScore', 'Q72', 'Q70', 'Q19', 'Q9', 'Q10',
+#        'Q35', 'Q26', 'Q27', 'Q46', 'Q37', 'Q38', 'Q59_1', 'Q59_2', 'Q59_3',
+#        'Q62_1', 'Q62_2', 'Q62_3', 'Q73_1', 'Q73_2', 'Q73_3', 'Q63_1', 'Q63_2',
+#        'Q63_3', 'Q64_1', 'Q64_2', 'Q64_3', 'Q75_1', 'Q75_2', 'Q75_3', 'Q65_1',
+#        'Q65_2', 'Q65_3', 'Q66_1', 'Q66_2', 'Q66_3', 'Q74_1', 'Q74_2', 'Q74_3',
+#        'Q67_1', 'Q67_2', 'Q67_3', 'Q68_1', 'Q68_2', 'Q68_3', 'Q69_1', 'Q69_2',
+#        'Q69_3', 'Q72_1', 'Q72_2', 'Q72_3', 'Q70_1', 'Q70_2', 'Q70_3',
+#        'Q74_1.1', 'Q74_2.1', 'Q74_3.1', 'Q73_1.1', 'Q73_2.1', 'Q73_3.1',
+#        'Q73_4', 'Q77', 'Q92_1', 'Q92_2', 'Q92_3', 'Q86', 'Q76', 'Q96', 'Q98',
+#        'Q94', 'Q107', 'Q1_28', 'Q2', 'Q2_11_TEXT', 'Q3', 'Q111', 'Q5']
 
-LABELS_PATHING = {}
-LABELS_PATHING['Omn'] = "Omniscient"
-LABELS_PATHING['M'] = "Multi"
-LABELS_PATHING['SA'] = "Single:A\n (for back-to-robot)"
-LABELS_PATHING['SB'] = "Single:B\n (for facing-robot)"
+COL_CONSENT     = 'Q72'
+COL_PROLIFIC_ID = 'Q70'
+COL_DURATION    = 'Duration (in seconds)'
+COL_ID          = 'ResponseId'
 
-POLARITY_UNSURE      = 0
-POLARITY_CORRECT     = 1
-POLARITY_INCORRECT   = -1
+COL_USE_SNAP    = 'Q19'
+COL_USE_WARBY   = 'Q26'
+COL_USE_MED     = 'Q37'
 
-STATE_UNSURE    = POLARITY_UNSURE
-STATE_CORRECT   = POLARITY_CORRECT
-STATE_INCORRECT = POLARITY_INCORRECT
+SUFFIX_SNAP     = '_1'
+SUFFIX_WARBY    = '_2'
+SUFFIX_MED      = '_3'
 
-# Static math
-unsure_top = VALUE_MIDDLE + UNSURE_WINDOW
-unsure_bottom = VALUE_MIDDLE - UNSURE_WINDOW
+COL_AUD_INTENTIONAL = 'Q59'
+COL_AUD_BACKGROUND  = 'Q62'
+COL_VIS_FACE_CORE   = 'Q73'
+COL_VIS_PUPIL       = 'Q63'
+COL_VIS_BKGD_OTHERS = 'Q64'
+COL_VIS_BKGD_ME     = 'Q75'
+COL_VIS_FACE_ALG    = 'Q65'
+COL_VIS_NN_INTENT   = 'Q66'
+COL_VIS_NN_ACCIDENT = 'Q74'
+COL_VIS_OBJ_MEDS    = 'Q67'
+COL_VIS_OBJ_SEX     = 'Q68'
+COL_VIS_OBJ_MESSY   = 'Q69'
+COL_VIS_OBJ_LICENSE = 'Q72'
+COL_LOCATION        = 'Q70'
+COL_PAYMENT         = 'Q74'
 
-perspectives_file = ['PA','PB']
-pathings_file = ['Omn', 'SA', 'SB', 'Multi']
+COL_RANK_DATA = 'Q73x'
+COL_RANK_APPS = 'Q92'
+
+COL_DEMO_AGE        = 'Q1_28'
+COL_DEMO_GENDER     = 'Q2'
+COL_DEMO_COUNTRY    = 'Q3'
+COL_DEMO_EDU        = 'Q111'
+COL_DEMO_TECHIE     = 'Q5'
+
+
+LABEL_AUD_INTENTIONAL = 'Intentional Audio'
+LABEL_AUD_BACKGROUND  = 'Background Audio'
+LABEL_VIS_FACE_CORE   = 'Face (for core functionality)'
+LABEL_VIS_PUPIL       = 'Pupil Dialation (to assess excitement)'
+LABEL_VIS_BKGD_OTHERS = 'Other Faces in the Background'
+LABEL_VIS_BKGD_ME     = 'My Face in the Background of Someone Else'
+LABEL_VIS_FACE_ALG    = 'Face (for Improving the App)'
+LABEL_VIS_NN_INTENT   = 'Near-Nudity (Intentional)'
+LABEL_VIS_NN_ACCIDENT = 'Near-Nudity (Accidental)'
+LABEL_VIS_OBJ_MEDS    = 'Object in Background (Meds)'
+LABEL_VIS_OBJ_SEX     = 'Object in Background (Sexual)'
+LABEL_VIS_OBJ_MESSY   = 'Object in Background (Mess)'
+LABEL_VIS_OBJ_LICENSE = 'Object in Background (ID)'
+LABEL_LOCATION        = 'Location'
+LABEL_PAYMENT         = 'Payment Information'
+
+LABEL_RANK_DATA = 'Q73x'
+LABEL_RANK_APPS = 'Q92'
+
+LABEL_DEMO_AGE      = 'Age'
+LABEL_DEMO_GENDER   = 'Gender'
+LABEL_DEMO_COUNTRY  = 'Country'
+LABEL_DEMO_EDU      = 'Education Level'
+LABEL_DEMO_TECHIE   = 'Tech-Savviness'
+
+D_VIS_FACE_CORE     = (COL_VIS_FACE_CORE,   LABEL_VIS_FACE_CORE)
+D_AUD_INTENTIONAL   = (COL_AUD_INTENTIONAL, LABEL_AUD_INTENTIONAL)
+D_AUD_BACKGROUND    = (COL_AUD_BACKGROUND,  LABEL_AUD_BACKGROUND)
+D_VIS_PUPIL         = (COL_VIS_PUPIL,       LABEL_VIS_PUPIL)
+D_VIS_BKGD_OTHERS   = (COL_VIS_BKGD_OTHERS,   LABEL_VIS_BKGD_OTHERS)
+D_VIS_BKGD_ME       = (COL_VIS_BKGD_ME,       LABEL_VIS_BKGD_ME)
+D_VIS_FACE_ALG      = (COL_VIS_FACE_ALG,      LABEL_VIS_FACE_ALG)
+D_VIS_NN_INTENT     = (COL_VIS_NN_INTENT,     LABEL_VIS_NN_INTENT)
+D_VIS_NN_ACCIDENT   = (COL_VIS_NN_ACCIDENT,   LABEL_VIS_NN_ACCIDENT)
+D_VIS_OBJ_MEDS      = (COL_VIS_OBJ_MEDS,      LABEL_VIS_OBJ_MEDS)
+D_VIS_OBJ_SEX       = (COL_VIS_OBJ_SEX,       LABEL_VIS_OBJ_SEX)
+D_VIS_OBJ_MESSY     = (COL_VIS_OBJ_MESSY,     LABEL_VIS_OBJ_MESSY)
+D_VIS_OBJ_LICENSE   = (COL_VIS_OBJ_LICENSE,   LABEL_VIS_OBJ_LICENSE)
+D_LOCATION          = (COL_LOCATION,          LABEL_LOCATION)
+D_PAYMENT           = (COL_PAYMENT,           LABEL_PAYMENT)
+
+
+SOLO_ANALYSES = [D_VIS_FACE_CORE, D_AUD_INTENTIONAL, D_AUD_BACKGROUND, D_VIS_PUPIL, 
+                D_VIS_BKGD_OTHERS, D_VIS_BKGD_OTHERS, D_VIS_FACE_ALG, D_VIS_NN_INTENT, 
+                D_VIS_NN_ACCIDENT, D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY,
+                D_VIS_OBJ_LICENSE, D_LOCATION, D_PAYMENT]
+
+CROSS_ANALYSIS = []
+CROSS_ANALYSIS.append([D_AUD_INTENTIONAL,    D_AUD_BACKGROUND])
+CROSS_ANALYSIS.append([D_VIS_NN_INTENT,      D_VIS_NN_ACCIDENT])
+CROSS_ANALYSIS.append([D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY, D_VIS_OBJ_LICENSE])
+
+
+def create_dir(filename):
+    try:
+        os.mkdir(filename)
+    except OSError as error:
+        print("Export repositories already created")    
+
+if FLAG_EXPORT:
+    create_dir(FILENAME_OUTPUTS)
+    create_dir(FILENAME_PLOTS)
+    create_dir(FILENAME_ANOVAS)
+
 
 df = pd.read_csv('finalsurveyresults.csv')
 print("Pandas data imported from CSV")
 
+print(df)
 
 #Get the set of uniqueids (no duplicates)
 idSet = set()
 for ind in df.index: #how to iterate through rows
     row = df.loc[ind]
-    idSet.add(row['uniqueid'])
+    idSet.add(row['ResponseId'])
     
 print("Number of participants: " + str(len(idSet)))
 print("participants: "+ str(idSet))
 
 ageList = []
-for ind in df_postquestionnaire.index: #how to iterate through rows
-   row = df_postquestionnaire.loc[ind]
-   ageList.append(row['age'])
+for ind in df.index: #how to iterate through rows
+   row = df.loc[ind]
+   ageList.append(row[COL_DEMO_AGE])
+
+
+genderList = []
+for ind in df.index: #how to iterate through rows
+   row = df.loc[ind]
+   genderList.append(row[COL_DEMO_GENDER])
 
 print("Ages: ")
 for item in ageList:
    print(item)
 
-genderList = []
-for ind in df_postquestionnaire.index: #how to iterate through rows
-   row = df_postquestionnaire.loc[ind]
-   genderList.append(row['gender'])
-
 print("Genders: ")
 for item in genderList:
    print(item)
+
 
 
 def analyze_all_participants(df):
