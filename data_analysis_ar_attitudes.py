@@ -117,35 +117,37 @@ LABEL_DEMO_COUNTRY  = 'Country'
 LABEL_DEMO_EDU      = 'Education Level'
 LABEL_DEMO_TECHIE   = 'Tech-Savviness'
 
-D_VIS_FACE_CORE     = (COL_VIS_FACE_CORE,   LABEL_VIS_FACE_CORE)
-D_AUD_INTENTIONAL   = (COL_AUD_INTENTIONAL, LABEL_AUD_INTENTIONAL)
-D_AUD_BACKGROUND    = (COL_AUD_BACKGROUND,  LABEL_AUD_BACKGROUND)
-D_VIS_PUPIL         = (COL_VIS_PUPIL,       LABEL_VIS_PUPIL)
-D_VIS_BKGD_OTHERS   = (COL_VIS_BKGD_OTHERS,   LABEL_VIS_BKGD_OTHERS)
-D_VIS_BKGD_ME       = (COL_VIS_BKGD_ME,       LABEL_VIS_BKGD_ME)
-D_VIS_FACE_ALG      = (COL_VIS_FACE_ALG,      LABEL_VIS_FACE_ALG)
-D_VIS_NN_INTENT     = (COL_VIS_NN_INTENT,     LABEL_VIS_NN_INTENT)
-D_VIS_NN_ACCIDENT   = (COL_VIS_NN_ACCIDENT,   LABEL_VIS_NN_ACCIDENT)
-D_VIS_OBJ_MEDS      = (COL_VIS_OBJ_MEDS,      LABEL_VIS_OBJ_MEDS)
-D_VIS_OBJ_SEX       = (COL_VIS_OBJ_SEX,       LABEL_VIS_OBJ_SEX)
-D_VIS_OBJ_MESSY     = (COL_VIS_OBJ_MESSY,     LABEL_VIS_OBJ_MESSY)
-D_VIS_OBJ_LICENSE   = (COL_VIS_OBJ_LICENSE,   LABEL_VIS_OBJ_LICENSE)
-D_LOCATION          = (COL_LOCATION,          LABEL_LOCATION)
-D_PAYMENT           = (COL_PAYMENT,           LABEL_PAYMENT)
+label_of = {}
+label_of[COL_AUD_INTENTIONAL]   = LABEL_AUD_INTENTIONAL
+label_of[COL_AUD_BACKGROUND]    = LABEL_AUD_BACKGROUND
 
+label_of[COL_VIS_FACE_CORE]     = LABEL_VIS_FACE_CORE
+label_of[COL_VIS_PUPIL]         = LABEL_VIS_PUPIL
+label_of[COL_VIS_BKGD_OTHERS]   = LABEL_VIS_BKGD_OTHERS
+label_of[COL_VIS_BKGD_ME]       = LABEL_VIS_BKGD_ME
+label_of[COL_VIS_FACE_ALG]      = LABEL_VIS_FACE_ALG
+label_of[COL_VIS_NN_INTENT]     = LABEL_VIS_NN_INTENT
+label_of[COL_VIS_NN_ACCIDENT]   = LABEL_VIS_NN_ACCIDENT
+label_of[COL_VIS_OBJ_MEDS]      = LABEL_VIS_OBJ_MEDS
+label_of[COL_VIS_OBJ_SEX]       = LABEL_VIS_OBJ_SEX
+label_of[COL_VIS_OBJ_MESSY]     = LABEL_VIS_OBJ_MESSY
+label_of[COL_VIS_OBJ_LICENSE]   = LABEL_VIS_OBJ_LICENSE
 
-SOLO_ANALYSES = [D_VIS_FACE_CORE, D_AUD_INTENTIONAL, D_AUD_BACKGROUND, D_VIS_PUPIL, 
-                D_VIS_BKGD_OTHERS, D_VIS_BKGD_ME, D_VIS_FACE_ALG, D_VIS_NN_INTENT, 
-                D_VIS_NN_ACCIDENT, D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY,
-                D_VIS_OBJ_LICENSE, D_LOCATION, D_PAYMENT]
+label_of[COL_LOCATION]          = LABEL_LOCATION
+label_of[COL_PAYMENT]           = LABEL_PAYMENT
+
+SOLO_ANALYSES = [COL_VIS_FACE_CORE, COL_AUD_INTENTIONAL, COL_AUD_BACKGROUND, COL_VIS_PUPIL, 
+                COL_VIS_BKGD_OTHERS, COL_VIS_BKGD_ME, COL_VIS_FACE_ALG, COL_VIS_NN_INTENT, 
+                COL_VIS_NN_ACCIDENT, COL_VIS_OBJ_MEDS, COL_VIS_OBJ_SEX, COL_VIS_OBJ_MESSY,
+                COL_VIS_OBJ_LICENSE, COL_LOCATION, COL_PAYMENT]
 
 CROSS_ANALYSIS = {}
-CROSS_ANALYSIS['audio']         = [D_AUD_INTENTIONAL,    D_AUD_BACKGROUND]
-CROSS_ANALYSIS['near-nudity']   = [D_VIS_NN_INTENT,      D_VIS_NN_ACCIDENT]
-CROSS_ANALYSIS['visual']        = [D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY, D_VIS_OBJ_LICENSE]
-CROSS_ANALYSIS['all']           = [D_VIS_PUPIL, D_VIS_BKGD_OTHERS, D_VIS_BKGD_ME, D_VIS_FACE_ALG, D_VIS_NN_INTENT, 
-                                    D_VIS_NN_ACCIDENT, D_VIS_OBJ_MEDS, D_VIS_OBJ_SEX, D_VIS_OBJ_MESSY,
-                                    D_VIS_OBJ_LICENSE]
+CROSS_ANALYSIS['audio']         = [COL_AUD_INTENTIONAL,    COL_AUD_BACKGROUND]
+CROSS_ANALYSIS['near-nudity']   = [COL_VIS_NN_INTENT,      COL_VIS_NN_ACCIDENT]
+CROSS_ANALYSIS['visual']        = [COL_VIS_OBJ_MEDS, COL_VIS_OBJ_SEX, COL_VIS_OBJ_MESSY, COL_VIS_OBJ_LICENSE]
+CROSS_ANALYSIS['all']           = [COL_VIS_PUPIL, COL_VIS_BKGD_OTHERS, COL_VIS_BKGD_ME, COL_VIS_FACE_ALG, COL_VIS_NN_INTENT, 
+                                    COL_VIS_NN_ACCIDENT, COL_VIS_OBJ_MEDS, COL_VIS_OBJ_SEX, COL_VIS_OBJ_MESSY,
+                                    COL_VIS_OBJ_LICENSE]
 
 
 def create_dir(filename):
@@ -256,9 +258,12 @@ def make_boxplot(df, cols, title, fn):
     plt.figure()
 
     df_new = df[cols]
+    df_newest = pd.melt(df_new)
+    df_newest['context'] = df_newest.apply(lambda row: context_map[cols.index(row['variable'])], axis=1)
+
     print("\tMAKING BOXPLOT")
     # print(df.values)
-    bx = sns.boxplot(x="variable", y="value", data=pd.melt(df_new))
+    bx = sns.boxplot(x="context", y="value", data=df_newest)
 
     # plt.tight_layout()
     # title = al_title[analysis] + "\n" + al_y_range
@@ -296,7 +301,8 @@ def make_cross_df(df, fn):
     df_total = None
 
     for c in cross:
-        col, title = c
+        col = c
+        title = label_of[col]
         cols = get_subcols(col)
         df_new = df[cols]
         df_new = pd.melt(df_new)
@@ -313,7 +319,7 @@ def make_cross_df(df, fn):
 
 
     print(df_total)
-    df_total['value'] = [mapping[item] for item in df_total['value']]
+    # df_total['value'] = [mapping[item] for item in df_total['value']]
     return df_total
 
 def make_boxplot_2way(df, title):
@@ -325,7 +331,9 @@ def make_boxplot_2way(df, title):
     print("\tMAKING BOXPLOT - 2WAY")
     # print(df.values)
     # bx = sns.boxplot(x="variable", y="value", data=df)
-    bx = sns.boxplot(data=df, x='question', y='value', hue='context') #, order=cat_order)
+    # sorted_index = df.median().sort_values().index
+    # print(sorted_index)
+    bx = sns.boxplot(data=df, x='question', y='value', hue='context', ) #, order=cat_order)
 
     plt.tight_layout()
     # title = al_title[analysis] + "\n" + al_y_range
@@ -416,11 +424,11 @@ df = df.drop(1)
 df = df.drop(0)
 print(df.columns)
 
-sus = [D_VIS_NN_ACCIDENT, D_VIS_OBJ_SEX, D_VIS_OBJ_LICENSE]
+sus = [COL_VIS_NN_ACCIDENT, COL_VIS_OBJ_SEX, COL_VIS_OBJ_LICENSE]
 
-for analysis in []: #SOLO_ANALYSES:
-    print(analysis)
-    col, label = analysis
+for col in SOLO_ANALYSES:
+    print(col)
+    label = label_of[col]
     fn = col
     cols = get_subcols(col)
 
@@ -430,10 +438,11 @@ for analysis in []: #SOLO_ANALYSES:
         df[col] = [mapping[item] for item in df[col]]
 
     df_cols = df[cols]
+
     make_boxplot(df_cols, cols, label, fn)
     make_anova(df_cols, cols, label, fn)
 
-    if analysis in sus:
+    if col in sus:
         # print(df_cols)
         pass
 
