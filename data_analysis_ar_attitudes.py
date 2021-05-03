@@ -94,17 +94,17 @@ COL_DEMO_TECHIE     = 'Q5'
 
 LABEL_AUD_INTENTIONAL = 'Intentional Audio'
 LABEL_AUD_BACKGROUND  = 'Background Audio'
-LABEL_VIS_FACE_CORE   = 'Face (for core functionality)'
-LABEL_VIS_PUPIL       = 'Pupil Dialation (to assess excitement)'
-LABEL_VIS_BKGD_OTHERS = 'Other Faces in the Background'
-LABEL_VIS_BKGD_ME     = 'My Face in the Background of Someone Else'
-LABEL_VIS_FACE_ALG    = 'Face (for Improving the App)'
-LABEL_VIS_NN_INTENT   = 'Near-Nudity (Intentional)'
-LABEL_VIS_NN_ACCIDENT = 'Near-Nudity (Accidental)'
-LABEL_VIS_OBJ_MEDS    = 'Object in Background (Meds)'
-LABEL_VIS_OBJ_SEX     = 'Object in Background (Sexual)'
-LABEL_VIS_OBJ_MESSY   = 'Object in Background (Mess)'
-LABEL_VIS_OBJ_LICENSE = 'Object in Background (ID)'
+LABEL_VIS_FACE_CORE   = 'My Face\n (for core functionality)'
+LABEL_VIS_PUPIL       = 'Pupil Dialation\n (to assess excitement)'
+LABEL_VIS_BKGD_OTHERS = 'Other Faces\n in the Background'
+LABEL_VIS_BKGD_ME     = 'My Face\n in the Background of Someone Else'
+LABEL_VIS_FACE_ALG    = 'My Face\n (for Improving the App)'
+LABEL_VIS_NN_INTENT   = 'Near-Nudity\n (Intentional)'
+LABEL_VIS_NN_ACCIDENT = 'Near-Nudity\n (Accidental)'
+LABEL_VIS_OBJ_MEDS    = 'Object \n (Meds)'
+LABEL_VIS_OBJ_SEX     = 'Object \n (Sexual)'
+LABEL_VIS_OBJ_MESSY   = 'Object \n (Mess)'
+LABEL_VIS_OBJ_LICENSE = 'Object \n (License)'
 LABEL_LOCATION        = 'Location'
 LABEL_PAYMENT         = 'Payment Information'
 
@@ -328,33 +328,41 @@ def make_cross_df(df, fn):
 
 def make_boxplot_2way(df, title):
     graph_type = "boxplot"
-    plt.figure()
     print("\tMAKING BOXPLOT - 2WAY")
+
+    fig_dims = (8, 5)
+    fig, ax = plt.subplots(figsize=fig_dims)
+
     # print(df.values)
     # bx = sns.boxplot(x="variable", y="value", data=df)
     # sorted_index = df.median().sort_values().index
     # print(sorted_index)
-    bx = sns.boxplot(data=df, x='question', y='value', hue='context') #, order=cat_order)
+    bx = sns.boxplot(data=df, x='value', y='question', hue='context') #, order=cat_order)
 
-    n = len(pd.unique(df['question']))
-
-    if n > 3:
-        bx.set_xticklabels(bx.get_xticklabels(), rotation=90)
-        
-
-
-    plt.tight_layout()
+    n = len(pd.unique(df['question']))   
+    # bx.tick_params('both', labelsize='15')
+    # plt.legend(legend)
     # title = al_title[analysis] + "\n" + al_y_range
     # bx = sns.boxplot(data=df, x=COL_PATHING, y=analysis, hue=COL_CHAIR, order=cat_order)
     # print("San check on data")
     # print(df[analysis])
     # print(df[analysis].columns)
 
-    bx.set(xlabel='Data Type')
-    bx.set(title=title, ylabel="Comfort level")
+    handles, _ = bx.get_legend_handles_labels()          # Get the artists.
+    bx.legend(handles, context_map) #, loc="top") # Associate manually the artists to a label.
+
+    bx.set(xlabel='Comfort Level')
+    bx.set(title=title, ylabel="Data Type")
+    plt.legend(bbox_to_anchor=(1.01, 1), borderaxespad=0)
+    # plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     # bx.set(xticks=['Social\n (SnapChat)', "Commercial\n (Warby Parker)", "Medical\n (PostureScreen)"])
     figure = bx.get_figure()    
-    figure.savefig(FILENAME_PLOTS + title + '-cross.png')#, bbox_inches='tight')
+    if n > 4:
+        bx.set_xticklabels(bx.get_xticklabels(), rotation=90)
+
+    # figure.autofmt_xdate() 
+    plt.tight_layout()
+    figure.savefig(FILENAME_PLOTS + "cross-" + title + '.png')#, bbox_inches='tight')
     plt.close()
 
 def make_anova_2way(df, title):
