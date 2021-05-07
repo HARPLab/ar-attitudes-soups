@@ -207,9 +207,14 @@ def make_anova(df, cols, title, fn):
     # print(analysis_label)
     # print(df[analysis_label])
 
-    df_col = df[cols]
-    df_col = pd.melt(df)
-    df_col['context'] = df_col.apply(lambda row: context_map[cols.index(row['variable'])], axis=1)
+    slice_cols = cols
+    slice_cols.append('ResponseId')
+
+    df_col = df[slice_cols]
+    df_col = pd.melt(df_col, id_vars='ResponseId')
+    print(df_col.columns)
+
+    df_col['context'] = df_col.apply(lambda row: context_map[slice_cols.index(row['variable'])], axis=1)
 
     # print(df_col)
     # df_col.columns == ['variable', 'value']
@@ -220,7 +225,7 @@ def make_anova(df, cols, title, fn):
     homogenous_data = False
 
     if not homogenous_data:
-        aov = pg.anova(dv='value', between='context', data=df_col)
+        aov = pg.rm_anova(dv='value', within='context', data=df_col, subject='ResponseId')
         aov.round(3)
 
         anova_text = anova_text + str(aov)
@@ -263,8 +268,10 @@ def make_boxplot(df, cols, title, fn):
     plt.figure()
 
     df_new = df[cols]
-    df_newest = pd.melt(df_new)
-    df_newest['context'] = df_newest.apply(lambda row: context_map[cols.index(row['variable'])], axis=1)
+    slice_cols = cols
+    slice_cols.append('ResponseId')
+    df_newest = pd.melt(df_new, id_vars="ResponseId")
+    df_newest['context'] = df_newest.apply(lambda row: context_map[slice_cols.index(row['variable'])], axis=1)
 
     print("\tMAKING BOXPLOT")
     # print(df.values)
@@ -309,11 +316,15 @@ def make_cross_df(df, fn):
         col = c
         title = label_of[col]
         cols = get_subcols(col)
-        df_new = df[cols]
-        df_new = pd.melt(df_new)
+
+        slice_cols = cols
+        slice_cols.append('ResponseId')
+        df_new = df[slice_cols]
+        df_new = pd.melt(df_new, id_vars='ResponseId')
 
         df_new['question'] = pd.Series([label_of[col] for x in range(len(df_new.index))])
         df_new['context'] = df_new.apply(lambda row: context_map[cols.index(row['variable'])], axis=1)
+
 
         # df_new['context'] = pd.Series([col for x in cols.index(df_new['variable'])])
 
@@ -384,8 +395,10 @@ def make_anova_2way(df, title):
     # homogenous_data = (val_min == val_max)
     homogenous_data = False
 
+    print(df.columns)
+
     if not homogenous_data:
-        aov = pg.anova(dv='value', between=['question', 'context'], data=df)
+        aov = pg.rm_anova(dv='value', within=['question', 'context'], subject='ResponseId', data=df)
         aov.round(3)
 
         anova_text = anova_text + str(aov)
@@ -404,7 +417,7 @@ def make_anova_2way(df, title):
         # Verify that subjects is legit
         # print(df[subject_id])
 
-        posthocs = pg.pairwise_ttests(dv='value', between=['question', 'context'], data=df)
+        posthocs = pg.pairwise_ttests(dv='value', within=['question', 'context'], subject='ResponseId', data=df)
         # pg.print_table(posthocs)
         anova_text = anova_text + "\n" + str(posthocs)
         posthocs.to_csv(FILENAME_ANOVAS + fn + '-posthocs.csv')
@@ -450,10 +463,8 @@ for col in SOLO_ANALYSES:
         # print(col + " being mapped to ints")
         df[col] = [mapping[item] for item in df[col]]
 
-    df_cols = df[cols]
-
-    make_anova(df_cols, cols, label, fn)
-    make_boxplot(df_cols, cols, label, fn)
+    make_anova(df, cols, label, fn)
+    make_boxplot(df, cols, label, fn)
     
 
     if col in sus:
