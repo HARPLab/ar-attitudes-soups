@@ -6,3 +6,17 @@ all
 3            Residual  2805.422222  1980  ...        NaN           NaN       NaN
 
 [4 rows x 7 columns]
+               Contrast             question  ...       BF10    hedges
+0              question                    -  ...     10.004  0.367913
+1              question                    -  ...  1.277e+22  1.404062
+2              question                    -  ...  1.273e+11  0.967124
+3              question                    -  ...  2.312e+07  0.789998
+4              question                    -  ...  7.944e+11  1.001994
+..                  ...                  ...  ...        ...       ...
+148  question * context             Location  ...      0.221  0.000000
+149  question * context             Location  ...      0.223 -0.033988
+150  question * context  Payment Information  ...      0.427 -0.256322
+151  question * context  Payment Information  ...      0.263 -0.131191
+152  question * context  Payment Information  ...      0.259  0.126484
+
+[153 rows x 12 columns]

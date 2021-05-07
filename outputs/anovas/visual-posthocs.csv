@@ -1,0 +1,265 @@
+,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
+0,question,-,"Pupil Dialation
+ (to assess excitement)","Other Faces
+ in the Background",False,True,-1.1820647978964496,268.0,two-sided,0.23822773162629443,0.259,-0.14347333041374338
+1,question,-,"Pupil Dialation
+ (to assess excitement)","My Face
+ in the Background of Someone Else",False,True,0.39151653016681887,268.0,two-sided,0.6957265841682216,0.144,0.04752039024851081
+2,question,-,"Pupil Dialation
+ (to assess excitement)","My Face
+ (for Improving the App)",False,True,-4.201753023793368,268.0,two-sided,3.610558729443513e-05,483.064,-0.5099885395220617
+3,question,-,"Pupil Dialation
+ (to assess excitement)","Near-Nudity
+ (Intentional)",False,True,0.33978861642334024,268.0,two-sided,0.7342818628255326,0.141,0.04124190528445567
+4,question,-,"Pupil Dialation
+ (to assess excitement)","Near-Nudity
+ (Accidental)",False,True,6.08451972705162,268.0,two-sided,4.020269910931825e-09,2.404e+06,0.7385096914836726
+5,question,-,"Pupil Dialation
+ (to assess excitement)","Object 
+ (Meds)",False,True,3.4066643806506,268.0,two-sided,0.0007585490457416047,30.56,0.413484510463047
+6,question,-,"Pupil Dialation
+ (to assess excitement)","Object 
+ (Sexual)",False,True,6.6238375863603824,268.0,two-sided,1.9082998512568708e-10,4.358e+07,0.8039694950108031
+7,question,-,"Pupil Dialation
+ (to assess excitement)","Object 
+ (Mess)",False,True,-2.5287534838085173,268.0,two-sided,0.012021187092048165,2.725,-0.30692791525727053
+8,question,-,"Pupil Dialation
+ (to assess excitement)","Object 
+ (License)",False,True,6.064351213642191,268.0,two-sided,4.489739932974313e-09,2.165e+06,0.7360617344905412
+9,question,-,"Other Faces
+ in the Background","My Face
+ in the Background of Someone Else",False,True,1.5434228738809475,268.0,two-sided,0.12390815516683831,0.413,0.18733323278598218
+10,question,-,"Other Faces
+ in the Background","My Face
+ (for Improving the App)",False,True,-2.831998728559662,268.0,two-sided,0.0049767777400571405,5.816,-0.3437343621407254
+11,question,-,"Other Faces
+ in the Background","Near-Nudity
+ (Intentional)",False,True,1.4855149219941726,268.0,two-sided,0.13858280891182478,0.381,0.18030464456525233
+12,question,-,"Other Faces
+ in the Background","Near-Nudity
+ (Accidental)",False,True,7.067007021030481,268.0,two-sided,1.3693035402306806e-11,5.399e+08,0.8577592659631608
+13,question,-,"Other Faces
+ in the Background","Object 
+ (Meds)",False,True,4.491930428894071,268.0,two-sided,1.0501688960660598e-05,1505.49,0.5452088749848075
+14,question,-,"Other Faces
+ in the Background","Object 
+ (Sexual)",False,True,7.589102386868144,268.0,two-sided,5.342781889069749e-13,1.213e+10,0.9211286862044303
+15,question,-,"Other Faces
+ in the Background","Object 
+ (Mess)",False,True,-1.2047918698623,268.0,two-sided,0.22934648649479705,0.266,-0.14623183291825587
+16,question,-,"Other Faces
+ in the Background","Object 
+ (License)",False,True,7.0512778217085526,268.0,two-sided,1.506404964251619e-11,4.928e+08,0.8558501315269822
+17,question,-,"My Face
+ in the Background of Someone Else","My Face
+ (for Improving the App)",False,True,-4.542861865763455,268.0,two-sided,8.39939682537749e-06,1850.675,-0.5513906874230187
+18,question,-,"My Face
+ in the Background of Someone Else","Near-Nudity
+ (Intentional)",False,True,-0.04798751054790897,268.0,two-sided,0.961761937429742,0.134,-0.005824492844068493
+19,question,-,"My Face
+ in the Background of Someone Else","Near-Nudity
+ (Accidental)",False,True,5.5420283812075875,268.0,two-sided,7.147760731850796e-08,1.585e+05,0.6726647054495859
+20,question,-,"My Face
+ in the Background of Someone Else","Object 
+ (Meds)",False,True,2.940084062373867,268.0,two-sided,0.003567503087071262,7.772,0.3568532392435724
+21,question,-,"My Face
+ in the Background of Someone Else","Object 
+ (Sexual)",False,True,6.053300139715298,268.0,two-sided,4.769309496626378e-09,2.045e+06,0.7347204083773187
+22,question,-,"My Face
+ in the Background of Someone Else","Object 
+ (Mess)",False,True,-2.8970827659761063,268.0,two-sided,0.004077491012686516,6.917,-0.35163394905129675
+23,question,-,"My Face
+ in the Background of Someone Else","Object 
+ (License)",False,True,5.518407007602987,268.0,two-sided,8.065882221074885e-08,1.415e+05,0.6697976569205795
+24,question,-,"My Face
+ (for Improving the App)","Near-Nudity
+ (Intentional)",False,True,4.457570743199001,268.0,two-sided,1.219616648927023e-05,1311.292,0.5410384618675115
+25,question,-,"My Face
+ (for Improving the App)","Near-Nudity
+ (Accidental)",False,True,10.89045751224118,268.0,two-sided,4.1414750264175504e-23,7.814e+19,1.321831266603279
+26,question,-,"My Face
+ (for Improving the App)","Object 
+ (Meds)",False,True,7.9135905754950775,268.0,two-sided,6.625591977144164e-14,9.037e+10,0.960513499274811
+27,question,-,"My Face
+ (for Improving the App)","Object 
+ (Sexual)",False,True,11.575246404312388,268.0,two-sided,2.1312431794140945e-25,1.35e+22,1.4049476432609993
+28,question,-,"My Face
+ (for Improving the App)","Object 
+ (Mess)",False,True,1.7665902458180966,268.0,two-sided,0.07843516529375372,0.586,0.2144202132531141
+29,question,-,"My Face
+ (for Improving the App)","Object 
+ (License)",False,True,10.899356218517166,268.0,two-sided,3.8702066935966473e-23,8.348e+19,1.3229113487003528
+30,question,-,"Near-Nudity
+ (Intentional)","Near-Nudity
+ (Accidental)",False,True,5.538614545841264,268.0,two-sided,7.273862475002105e-08,1.56e+05,0.672250350559429
+31,question,-,"Near-Nudity
+ (Intentional)","Object 
+ (Meds)",False,True,2.964604664024107,268.0,two-sided,0.0033035085784485193,8.312,0.3598294317406074
+32,question,-,"Near-Nudity
+ (Intentional)","Object 
+ (Sexual)",False,True,6.042253419226411,268.0,two-sided,5.06576995173925e-09,1.931e+06,0.7333796106634278
+33,question,-,"Near-Nudity
+ (Intentional)","Object 
+ (Mess)",False,True,-2.82300504708748,268.0,two-sided,0.005114323753693533,5.68,-0.34264275241189274
+34,question,-,"Near-Nudity
+ (Intentional)","Object 
+ (License)",False,True,5.514881908771471,268.0,two-sided,8.212392861401804e-08,1.391e+05,0.6693697974070444
+35,question,-,"Near-Nudity
+ (Accidental)","Object 
+ (Meds)",False,True,-2.695289757374793,268.0,two-sided,0.007477443722208758,4.091,-0.3271412858320205
+36,question,-,"Near-Nudity
+ (Accidental)","Object 
+ (Sexual)",False,True,0.43232430033327773,268.0,two-sided,0.6658533821746617,0.146,0.05247344079443641
+37,question,-,"Near-Nudity
+ (Accidental)","Object 
+ (Mess)",False,True,-9.179288465599818,268.0,two-sided,1.212274002313486e-17,3.718e+14,-1.114137811507213
+38,question,-,"Near-Nudity
+ (Accidental)","Object 
+ (License)",False,True,-0.06948727099412233,268.0,two-sided,0.9446535835257766,0.134,-0.008434030189064464
+39,question,-,"Object 
+ (Meds)","Object 
+ (Sexual)",False,True,3.1876130106094704,268.0,two-sided,0.0016046006716828882,15.694,0.3868971104766654
+40,question,-,"Object 
+ (Meds)","Object 
+ (Mess)",False,True,-6.217138941672119,268.0,two-sided,1.9322002034464928e-09,4.817e+06,-0.7546063728435425
+41,question,-,"Object 
+ (Meds)","Object 
+ (License)",False,True,2.652120656058149,268.0,two-sided,0.008475632979694019,3.673,0.3219016282871134
+42,question,-,"Object 
+ (Sexual)","Object 
+ (Mess)",False,True,-9.841562772225895,268.0,two-sided,1.0395534893629223e-19,3.789e+16,-1.1945214762506238
+43,question,-,"Object 
+ (Sexual)","Object 
+ (License)",False,True,-0.5093359921544817,268.0,two-sided,0.6109358500273139,0.151,-0.06182074893359046
+44,question,-,"Object 
+ (Mess)","Object 
+ (License)",False,True,9.179552606010361,268.0,two-sided,1.210014100440665e-17,3.725e+14,1.114169871597713
+45,context,-,"Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-0.674833046065367,898.0,two-sided,0.49995554426849853,0.093,-0.044951285051193474
+46,context,-,"Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-0.02745319958898225,898.0,two-sided,0.9781043666571064,0.075,-0.0018286843056765675
+47,context,-,"Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.6485225817671967,898.0,two-sided,0.5168128084336436,0.092,0.04319871945383276
+48,question * context,"Pupil Dialation
+ (to assess excitement)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-1.6003952081077935,88.0,two-sided,0.11309507963075498,0.677,-0.33450923397641985
+49,question * context,"Pupil Dialation
+ (to assess excitement)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-1.4052596052704172,88.0,two-sided,0.16346460783639521,0.524,-0.2937226453288355
+50,question * context,"Pupil Dialation
+ (to assess excitement)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.1639214110713836,88.0,two-sided,0.8701689148227181,0.223,0.034262303068661216
+51,question * context,"Other Faces
+ in the Background","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,1.6562012391401182,88.0,two-sided,0.10124280028034739,0.732,0.3461736232455921
+52,question * context,"Other Faces
+ in the Background","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,1.9516311808146483,88.0,two-sided,0.054162341128399974,1.159,0.4079233979153681
+53,question * context,"Other Faces
+ in the Background","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.3233328077138235,88.0,two-sided,0.7472103081488237,0.231,0.06758193806120871
+54,question * context,"My Face
+ in the Background of Someone Else","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,0.4944132324730441,88.0,two-sided,0.6222463834493145,0.246,0.10334059413855988
+55,question * context,"My Face
+ in the Background of Someone Else","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,0.8351807887546755,88.0,two-sided,0.40587769235177895,0.3,0.17456668481809867
+56,question * context,"My Face
+ in the Background of Someone Else","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.33696941566969246,88.0,two-sided,0.7369422933440419,0.232,0.07043221607894147
+57,question * context,"My Face
+ (for Improving the App)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-1.4426289876721643,88.0,two-sided,0.1526749869933683,0.549,-0.30153346819187077
+58,question * context,"My Face
+ (for Improving the App)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-0.5252257314388904,88.0,two-sided,0.6007471347284377,0.249,-0.10978091923685286
+59,question * context,"My Face
+ (for Improving the App)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.9266658930916551,88.0,two-sided,0.35663453688398294,0.322,0.19368859421708925
+60,question * context,"Near-Nudity
+ (Intentional)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-0.4030899852254699,88.0,two-sided,0.6878596926376348,0.237,-0.08425251556505313
+61,question * context,"Near-Nudity
+ (Intentional)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-0.5769935498048209,88.0,two-sided,0.5654169744788038,0.256,-0.12060125485051178
+62,question * context,"Near-Nudity
+ (Intentional)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,-0.16575356073787295,88.0,two-sided,0.8687311069256245,0.223,-0.034645252841543954
+63,question * context,"Near-Nudity
+ (Accidental)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,0.11276862598161005,88.0,two-sided,0.9104708432571575,0.222,0.02357051964575804
+64,question * context,"Near-Nudity
+ (Accidental)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,0.35915209593294767,88.0,two-sided,0.7203416383476631,0.234,0.07506876544175708
+65,question * context,"Near-Nudity
+ (Accidental)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.24729249659910502,88.0,two-sided,0.8052579056885564,0.227,0.05168824749437226
+66,question * context,"Object 
+ (Meds)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-0.7125812379830021,88.0,two-sided,0.47799010062857783,0.276,-0.14894133827449454
+67,question * context,"Object 
+ (Meds)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-0.8251369970070349,88.0,two-sided,0.4115250129613658,0.298,-0.17246736518336026
+68,question * context,"Object 
+ (Meds)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,-0.09513029883089942,88.0,two-sided,0.9244276209428535,0.222,-0.019883815715429666
+69,question * context,"Object 
+ (Sexual)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,0.2569367706772058,88.0,two-sided,0.797827369057462,0.227,0.05370406128697819
+70,question * context,"Object 
+ (Sexual)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,0.2569367706772058,88.0,two-sided,0.797827369057462,0.227,0.05370406128697819
+71,question * context,"Object 
+ (Sexual)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.0,88.0,two-sided,1.0,0.221,0.0
+72,question * context,"Object 
+ (Mess)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-0.17878794408526577,88.0,two-sided,0.8585151908452012,0.224,-0.03736965589324173
+73,question * context,"Object 
+ (Mess)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,0.17872303649769,88.0,two-sided,0.8585660051011447,0.224,0.03735608912717718
+74,question * context,"Object 
+ (Mess)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.3519324354579656,88.0,two-sided,0.7257302959216264,0.233,0.0735597362452054
+75,question * context,"Object 
+ (License)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-0.7559289460184543,88.0,two-sided,0.4517105851113208,0.284,-0.15800173069263776
+76,question * context,"Object 
+ (License)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-0.7439483312010687,88.0,two-sided,0.4588895889933443,0.282,-0.15549758280164994
+77,question * context,"Object 
+ (License)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.0,88.0,two-sided,1.0,0.221,0.0

@@ -6,3 +6,27 @@ face
 3            Residual  888.400000  528  ...        NaN           NaN       NaN
 
 [4 rows x 7 columns]
+              Contrast  ...    hedges
+0             question  ...  0.479866
+1             question  ...  1.001994
+2             question  ...  0.789998
+3             question  ...  0.551391
+4             question  ...  0.343734
+5             question  ... -0.187333
+6              context  ...  0.003991
+7              context  ...  0.108542
+8              context  ...  0.103435
+9   question * context  ... -0.145746
+10  question * context  ... -0.031708
+11  question * context  ...  0.116753
+12  question * context  ... -0.301533
+13  question * context  ... -0.109781
+14  question * context  ...  0.193689
+15  question * context  ...  0.103341
+16  question * context  ...  0.174567
+17  question * context  ...  0.070432
+18  question * context  ...  0.346174
+19  question * context  ...  0.407923
+20  question * context  ...  0.067582
+
+[21 rows x 12 columns]

@@ -6,3 +6,27 @@ obj
 3            Residual  519.600000  528  ...        NaN           NaN       NaN
 
 [4 rows x 7 columns]
+              Contrast             question  ...       BF10    hedges
+0             question                    -  ...     15.694  0.386897
+1             question                    -  ...  4.817e+06 -0.754606
+2             question                    -  ...      3.673  0.321902
+3             question                    -  ...  3.789e+16 -1.194521
+4             question                    -  ...      0.151 -0.061821
+5             question                    -  ...  3.725e+14  1.114170
+6              context                    -  ...      0.141 -0.066012
+7              context                    -  ...      0.131 -0.051177
+8              context                    -  ...      0.118  0.014887
+9   question * context     Object \n (Meds)  ...      0.276 -0.148941
+10  question * context     Object \n (Meds)  ...      0.298 -0.172467
+11  question * context     Object \n (Meds)  ...      0.222 -0.019884
+12  question * context   Object \n (Sexual)  ...      0.227  0.053704
+13  question * context   Object \n (Sexual)  ...      0.227  0.053704
+14  question * context   Object \n (Sexual)  ...      0.221  0.000000
+15  question * context     Object \n (Mess)  ...      0.224 -0.037370
+16  question * context     Object \n (Mess)  ...      0.224  0.037356
+17  question * context     Object \n (Mess)  ...      0.233  0.073560
+18  question * context  Object \n (License)  ...      0.284 -0.158002
+19  question * context  Object \n (License)  ...      0.282 -0.155498
+20  question * context  Object \n (License)  ...      0.221  0.000000
+
+[21 rows x 12 columns]

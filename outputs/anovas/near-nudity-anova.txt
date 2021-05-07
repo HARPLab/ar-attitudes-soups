@@ -6,3 +6,16 @@ near-nudity
 3            Residual  322.888889  264  ...        NaN           NaN       NaN
 
 [4 rows x 7 columns]
+             Contrast                     question  ...      BF10    hedges
+0            question                            -  ...  1.56e+05  0.672250
+1             context                            -  ...     0.166 -0.037427
+2             context                            -  ...     0.167 -0.038364
+3             context                            -  ...     0.162  0.000000
+4  question * context  Near-Nudity\n (Intentional)  ...     0.237 -0.084253
+5  question * context  Near-Nudity\n (Intentional)  ...     0.256 -0.120601
+6  question * context  Near-Nudity\n (Intentional)  ...     0.223 -0.034645
+7  question * context   Near-Nudity\n (Accidental)  ...     0.222  0.023571
+8  question * context   Near-Nudity\n (Accidental)  ...     0.234  0.075069
+9  question * context   Near-Nudity\n (Accidental)  ...     0.227  0.051688
+
+[10 rows x 12 columns]

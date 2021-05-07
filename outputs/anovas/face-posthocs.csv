@@ -1,0 +1,76 @@
+,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
+0,question,-,"My Face
+ (for core functionality)","My Face
+ (for Improving the App)",False,True,3.9535741910470175,268.0,two-sided,9.857899291235182e-05,192.869,0.47986578843795946
+1,question,-,"My Face
+ (for core functionality)","My Face
+ in the Background of Someone Else",False,True,8.255346555611505,268.0,two-sided,6.956377659269375e-15,7.944e+11,1.0019941936862964
+2,question,-,"My Face
+ (for core functionality)","Other Faces
+ in the Background",False,True,6.508727296950689,268.0,two-sided,3.712398563468637e-10,2.312e+07,0.7899979626414371
+3,question,-,"My Face
+ (for Improving the App)","My Face
+ in the Background of Someone Else",False,True,4.542861865763455,268.0,two-sided,8.39939682537749e-06,1850.675,0.5513906874230187
+4,question,-,"My Face
+ (for Improving the App)","Other Faces
+ in the Background",False,True,2.831998728559662,268.0,two-sided,0.0049767777400571405,5.816,0.3437343621407254
+5,question,-,"My Face
+ in the Background of Someone Else","Other Faces
+ in the Background",False,True,-1.5434228738809475,268.0,two-sided,0.12390815516683831,0.413,-0.18733323278598218
+6,context,-,"Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,0.037942228081762855,358.0,two-sided,0.9697548926388067,0.117,0.003991077391630096
+7,context,-,"Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,1.0318863081774343,358.0,two-sided,0.3028219735032537,0.194,0.108542337219229
+8,context,-,"Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.9833356584101113,358.0,two-sided,0.3261063474415785,0.185,0.10343537828635467
+9,question * context,"My Face
+ (for core functionality)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-0.6972954965793162,88.0,two-sided,0.48745601869554067,0.273,-0.1457463639195324
+10,question * context,"My Face
+ (for core functionality)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-0.15169888694797745,88.0,two-sided,0.8797716734759126,0.223,-0.03170759210660269
+11,question * context,"My Face
+ (for core functionality)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.5585799651115523,88.0,two-sided,0.5778669947446863,0.253,0.11675250919112694
+12,question * context,"My Face
+ (for Improving the App)","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,-1.4426289876721643,88.0,two-sided,0.1526749869933683,0.549,-0.30153346819187077
+13,question * context,"My Face
+ (for Improving the App)","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,-0.5252257314388904,88.0,two-sided,0.6007471347284377,0.249,-0.10978091923685286
+14,question * context,"My Face
+ (for Improving the App)","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.9266658930916551,88.0,two-sided,0.35663453688398294,0.322,0.19368859421708925
+15,question * context,"My Face
+ in the Background of Someone Else","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,0.4944132324730441,88.0,two-sided,0.6222463834493145,0.246,0.10334059413855988
+16,question * context,"My Face
+ in the Background of Someone Else","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,0.8351807887546755,88.0,two-sided,0.40587769235177895,0.3,0.17456668481809867
+17,question * context,"My Face
+ in the Background of Someone Else","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.33696941566969246,88.0,two-sided,0.7369422933440419,0.232,0.07043221607894147
+18,question * context,"Other Faces
+ in the Background","Social
+ (SnapChat)","Commercial
+ (Warby Parker)",False,True,1.6562012391401182,88.0,two-sided,0.10124280028034739,0.732,0.3461736232455921
+19,question * context,"Other Faces
+ in the Background","Social
+ (SnapChat)","Medical
+ (PostureScreen)",False,True,1.9516311808146483,88.0,two-sided,0.054162341128399974,1.159,0.4079233979153681
+20,question * context,"Other Faces
+ in the Background","Commercial
+ (Warby Parker)","Medical
+ (PostureScreen)",False,True,0.3233328077138235,88.0,two-sided,0.7472103081488237,0.231,0.06758193806120871
