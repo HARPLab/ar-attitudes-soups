@@ -348,7 +348,7 @@ def make_boxplot_2way(df, title):
     # print(df[analysis])
     # print(df[analysis].columns)
 
-    handles, _ = bx.get_legend_handles_labels()          # Get the artists.
+    handles, _ = bx.get_legend_handles_labels()   # Get the artists.
     bx.legend(handles, context_map) #, loc="top") # Associate manually the artists to a label.
 
     bx.set(xlabel='Comfort Level')
@@ -404,12 +404,11 @@ def make_anova_2way(df, title):
         # Verify that subjects is legit
         # print(df[subject_id])
 
-        # posthocs = pg.pairwise_ttests(dv=analysis_label, within=COL_PATHING, between=COL_CHAIR,
-        #                           subject=subject_id, data=df)
-        # # pg.print_table(posthocs)
-        # anova_text = anova_text + "\n" + str(posthocs)
-        # posthocs.to_csv(FILENAME_ANOVAS + fn + 'posthocs.csv')
-        # print()
+        posthocs = pg.pairwise_ttests(dv='value', between=['question', 'context'], data=df)
+        # pg.print_table(posthocs)
+        anova_text = anova_text + "\n" + str(posthocs)
+        posthocs.to_csv(FILENAME_ANOVAS + fn + '-posthocs.csv')
+        print()
 
     else:
         print("! Issue creating ANOVA for " + analysis_label)
@@ -479,7 +478,8 @@ print("TODO")
 # Display contexts better than with key
 # Bigger graph area overall
 # Y-labels pretty
-
+# We  compare  the  reported  ranking  of  the  differentmodes in each condition with the Bradley-Terry model
+# ranked choice analysis
 
 print("FINISHED")
 
