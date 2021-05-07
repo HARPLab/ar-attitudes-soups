@@ -1,3 +1,5 @@
 Payment Information
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  0.756718  0.471228  0.011335
+    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
+0  context      2     88  7.590296  ...  0.816294       False  0.774951  0.004163
+
+[1 rows x 11 columns]

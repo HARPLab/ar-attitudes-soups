@@ -1,3 +1,5 @@
 Intentional Audio
-    Source  ddof1  ddof2        F     p-unc       np2
-0  context      2    132  1.69684  0.187234  0.025065
+    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
+0  context      2     88  2.966292  ...  0.884614       False  0.869564  0.049543
+
+[1 rows x 11 columns]

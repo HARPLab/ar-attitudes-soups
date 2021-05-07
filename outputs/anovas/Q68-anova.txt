@@ -1,4 +1,4 @@
 Object 
  (Sexual)
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  0.045221  0.955801  0.000685
+    Source  ddof1  ddof2    F     p-unc       np2  eps
+0  context      2     88  1.0  0.372021  0.022222  0.5

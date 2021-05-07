@@ -1,4 +1,6 @@
 Object 
  (License)
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  0.350598  0.704921  0.005284
+    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
+0  context      2     88  4.292683  ...  0.713195       False  0.597858  0.000016
+
+[1 rows x 11 columns]

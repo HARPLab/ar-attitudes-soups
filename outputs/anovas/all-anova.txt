@@ -1,22 +1,21 @@
 all
-               Source           SS    DF  ...          F         p-unc       np2
-0            question   720.599506    14  ...  36.327280  5.064752e-88  0.204366
-1             context     2.027654     2  ...   0.715535  4.890568e-01  0.000722
-2  question * context    31.468642    28  ...   0.793208  7.704922e-01  0.011093
-3            Residual  2805.422222  1980  ...        NaN           NaN       NaN
+               Source          SS  ddof1  ...     p-GG-corr       np2       eps
+0            question  720.599506     14  ...  2.554063e-29  0.325690  0.643038
+1             context    2.027654      2  ...  2.735224e-01  0.028747  0.780804
+2  question * context   31.468642     28  ...  4.227728e-04  0.078515  0.270998
 
-[4 rows x 7 columns]
+[3 rows x 10 columns]
                Contrast             question  ...       BF10    hedges
-0              question                    -  ...     10.004  0.367913
-1              question                    -  ...  1.277e+22  1.404062
-2              question                    -  ...  1.273e+11  0.967124
-3              question                    -  ...  2.312e+07  0.789998
-4              question                    -  ...  7.944e+11  1.001994
+0              question                    -  ...      5.548  0.433606
+1              question                    -  ...  3.962e+09  1.571501
+2              question                    -  ...  1.888e+04  1.068036
+3              question                    -  ...  7.024e+04  0.869525
+4              question                    -  ...  7.847e+06  1.066366
 ..                  ...                  ...  ...        ...       ...
-148  question * context             Location  ...      0.221  0.000000
-149  question * context             Location  ...      0.223 -0.033988
-150  question * context  Payment Information  ...      0.427 -0.256322
-151  question * context  Payment Information  ...      0.263 -0.131191
-152  question * context  Payment Information  ...      0.259  0.126484
+148  question * context             Location  ...      0.162  0.000000
+149  question * context             Location  ...      0.181 -0.033988
+150  question * context  Payment Information  ...      13.11 -0.256322
+151  question * context  Payment Information  ...      1.512 -0.131191
+152  question * context  Payment Information  ...      1.512  0.126484
 
 [153 rows x 12 columns]

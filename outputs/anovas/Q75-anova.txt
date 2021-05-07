@@ -1,4 +1,6 @@
 My Face
  in the Background of Someone Else
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  0.352222  0.703782  0.005308
+    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
+0  context      2     88  3.330677  ...  0.705907       False  0.583384  0.000009
+
+[1 rows x 11 columns]

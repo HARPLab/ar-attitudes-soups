@@ -1,37 +1,37 @@
 ,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
 0,question,-,"Near-Nudity
  (Intentional)","Near-Nudity
- (Accidental)",False,True,5.538614545841264,268.0,two-sided,7.273862475002105e-08,1.56e+05,0.672250350559429
+ (Accidental)",True,True,4.803424752716322,44.0,two-sided,1.840334996444485e-05,1115.896,0.7170937545746775
 1,context,-,"Social
  (SnapChat)","Commercial
- (Warby Parker)",False,True,-0.25213375135318306,178.0,two-sided,0.8012285744600609,0.166,-0.037427290283450994
+ (Warby Parker)",True,True,-0.5400297638242478,44.0,two-sided,0.5918994669614741,0.185,-0.044588415671500806
 2,context,-,"Social
  (SnapChat)","Medical
- (PostureScreen)",False,True,-0.25844098908750046,178.0,two-sided,0.7963651756578831,0.167,-0.038363550567138124
+ (PostureScreen)",True,True,-0.42249140322758894,44.0,two-sided,0.6747239278162762,0.176,-0.04652326212321831
 3,context,-,"Commercial
  (Warby Parker)","Medical
- (PostureScreen)",False,True,0.0,178.0,two-sided,1.0,0.162,0.0
+ (PostureScreen)",True,True,0.0,44.0,two-sided,1.0,0.162,0.0
 4,question * context,"Near-Nudity
  (Intentional)","Social
  (SnapChat)","Commercial
- (Warby Parker)",False,True,-0.4030899852254699,88.0,two-sided,0.6878596926376348,0.237,-0.08425251556505313
+ (Warby Parker)",True,True,-1.0,44.0,two-sided,0.3227784787543093,0.258,-0.08425251556505313
 5,question * context,"Near-Nudity
  (Intentional)","Social
  (SnapChat)","Medical
- (PostureScreen)",False,True,-0.5769935498048209,88.0,two-sided,0.5654169744788038,0.256,-0.12060125485051178
+ (PostureScreen)",True,True,-1.0691866662344074,44.0,two-sided,0.29081624084425634,0.276,-0.12060125485051178
 6,question * context,"Near-Nudity
  (Intentional)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",False,True,-0.16575356073787295,88.0,two-sided,0.8687311069256245,0.223,-0.034645252841543954
+ (PostureScreen)",True,True,-0.3054819046384022,44.0,two-sided,0.7614397232286043,0.169,-0.034645252841543954
 7,question * context,"Near-Nudity
  (Accidental)","Social
  (SnapChat)","Commercial
- (Warby Parker)",False,True,0.11276862598161005,88.0,two-sided,0.9104708432571575,0.222,0.02357051964575804
+ (Warby Parker)",True,True,0.29844400799971044,44.0,two-sided,0.7667692158824722,0.169,0.02357051964575804
 8,question * context,"Near-Nudity
  (Accidental)","Social
  (SnapChat)","Medical
- (PostureScreen)",False,True,0.35915209593294767,88.0,two-sided,0.7203416383476631,0.234,0.07506876544175708
+ (PostureScreen)",True,True,0.7710996009560598,44.0,two-sided,0.444769192731553,0.214,0.07506876544175708
 9,question * context,"Near-Nudity
  (Accidental)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",False,True,0.24729249659910502,88.0,two-sided,0.8052579056885564,0.227,0.05168824749437226
+ (PostureScreen)",True,True,1.0,44.0,two-sided,0.3227784787543093,0.258,0.05168824749437226

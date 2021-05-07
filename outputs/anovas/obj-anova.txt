@@ -1,32 +1,31 @@
 obj
-               Source          SS   DF  ...          F         p-unc       np2
-0            question  126.138889    3  ...  42.726029  9.867953e-25  0.195340
-1             context    0.514815    2  ...   0.261569  7.699427e-01  0.000990
-2  question * context    1.100000    6  ...   0.186297  9.806148e-01  0.002113
-3            Residual  519.600000  528  ...        NaN           NaN       NaN
+               Source          SS  ddof1  ...     p-GG-corr       np2       eps
+0            question  126.138889      3  ...  4.062599e-11  0.392854  0.737822
+1             context    0.514815      2  ...  1.524454e-01  0.044767  0.634904
+2  question * context    1.100000      6  ...  1.296118e-01  0.047482  0.264516
 
-[4 rows x 7 columns]
+[3 rows x 10 columns]
               Contrast             question  ...       BF10    hedges
-0             question                    -  ...     15.694  0.386897
-1             question                    -  ...  4.817e+06 -0.754606
-2             question                    -  ...      3.673  0.321902
-3             question                    -  ...  3.789e+16 -1.194521
-4             question                    -  ...      0.151 -0.061821
-5             question                    -  ...  3.725e+14  1.114170
-6              context                    -  ...      0.141 -0.066012
-7              context                    -  ...      0.131 -0.051177
-8              context                    -  ...      0.118  0.014887
-9   question * context     Object \n (Meds)  ...      0.276 -0.148941
-10  question * context     Object \n (Meds)  ...      0.298 -0.172467
-11  question * context     Object \n (Meds)  ...      0.222 -0.019884
-12  question * context   Object \n (Sexual)  ...      0.227  0.053704
-13  question * context   Object \n (Sexual)  ...      0.227  0.053704
-14  question * context   Object \n (Sexual)  ...      0.221  0.000000
-15  question * context     Object \n (Mess)  ...      0.224 -0.037370
-16  question * context     Object \n (Mess)  ...      0.224  0.037356
-17  question * context     Object \n (Mess)  ...      0.233  0.073560
-18  question * context  Object \n (License)  ...      0.284 -0.158002
-19  question * context  Object \n (License)  ...      0.282 -0.155498
-20  question * context  Object \n (License)  ...      0.221  0.000000
+0             question                    -  ...      6.521  0.393717
+1             question                    -  ...   2190.613 -0.775457
+2             question                    -  ...       2.19  0.329322
+3             question                    -  ...  9.807e+05 -1.218153
+4             question                    -  ...      0.188 -0.062465
+5             question                    -  ...  1.701e+05  1.141364
+6              context                    -  ...      0.749 -0.096087
+7              context                    -  ...      0.311 -0.074173
+8              context                    -  ...      0.223  0.021114
+9   question * context     Object \n (Meds)  ...      1.003 -0.148941
+10  question * context     Object \n (Meds)  ...      1.128 -0.172467
+11  question * context     Object \n (Meds)  ...      0.177 -0.019884
+12  question * context   Object \n (Sexual)  ...      0.258  0.053704
+13  question * context   Object \n (Sexual)  ...      0.258  0.053704
+14  question * context   Object \n (Sexual)  ...        nan  0.000000
+15  question * context     Object \n (Mess)  ...      0.185 -0.037370
+16  question * context     Object \n (Mess)  ...      0.176  0.037356
+17  question * context     Object \n (Mess)  ...      0.417  0.073560
+18  question * context  Object \n (License)  ...      1.457 -0.158002
+19  question * context  Object \n (License)  ...      1.457 -0.155498
+20  question * context  Object \n (License)  ...      0.162  0.000000
 
 [21 rows x 12 columns]

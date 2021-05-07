@@ -1,4 +1,6 @@
 Other Faces
  in the Background
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  2.264029  0.107953  0.033166
+    Source  ddof1  ddof2  ...  sphericity   W-spher       p-spher
+0  context      2     88  ...       False  0.337552  7.233077e-11
+
+[1 rows x 11 columns]

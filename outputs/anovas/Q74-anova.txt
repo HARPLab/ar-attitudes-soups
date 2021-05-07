@@ -1,4 +1,6 @@
 Near-Nudity
  (Accidental)
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  0.065476  0.936652  0.000991
+    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher  p-spher
+0  context      2     88  0.461078  ...  0.706466       False  0.584505  0.00001
+
+[1 rows x 11 columns]

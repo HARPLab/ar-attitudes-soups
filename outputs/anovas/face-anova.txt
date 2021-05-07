@@ -1,21 +1,20 @@
 face
-               Source          SS   DF  ...          F         p-unc       np2
-0            question  134.183333    3  ...  26.582921  5.016468e-16  0.131220
-1             context    2.603704    2  ...   0.773726  4.618136e-01  0.002922
-2  question * context   10.833333    6  ...   1.073090  3.774271e-01  0.012047
-3            Residual  888.400000  528  ...        NaN           NaN       NaN
+               Source          SS  ddof1  ...     p-GG-corr       np2       eps
+0            question  134.183333      3  ...  1.051761e-10  0.346205  0.852895
+1             context    2.603704      2  ...  1.291329e-01  0.047484  0.801516
+2  question * context   10.833333      6  ...  9.616354e-04  0.127202  0.424215
 
-[4 rows x 7 columns]
+[3 rows x 10 columns]
               Contrast  ...    hedges
-0             question  ...  0.479866
-1             question  ...  1.001994
-2             question  ...  0.789998
-3             question  ...  0.551391
-4             question  ...  0.343734
-5             question  ... -0.187333
-6              context  ...  0.003991
-7              context  ...  0.108542
-8              context  ...  0.103435
+0             question  ...  0.520109
+1             question  ...  1.066366
+2             question  ...  0.869525
+3             question  ...  0.575904
+4             question  ...  0.372444
+5             question  ... -0.199289
+6              context  ...  0.005250
+7              context  ...  0.142001
+8              context  ...  0.144088
 9   question * context  ... -0.145746
 10  question * context  ... -0.031708
 11  question * context  ...  0.116753

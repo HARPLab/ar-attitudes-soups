@@ -1,21 +1,20 @@
 near-nudity
-               Source          SS   DF  ...          F         p-unc       np2
-0            question   37.037037    1  ...  30.282175  8.834102e-08  0.102902
-1             context    0.118519    2  ...   0.048451  9.527120e-01  0.000367
-2  question * context    0.562963    2  ...   0.230145  7.945780e-01  0.001740
-3            Residual  322.888889  264  ...        NaN           NaN       NaN
+               Source         SS  ddof1  ...  p-GG-corr       np2       eps
+0            question  37.037037      1  ...   0.000018  0.343997  1.000000
+1             context   0.118519      2  ...   0.825244  0.003666  0.884923
+2  question * context   0.562963      2  ...   0.178793  0.039276  0.816006
 
-[4 rows x 7 columns]
+[3 rows x 10 columns]
              Contrast                     question  ...      BF10    hedges
-0            question                            -  ...  1.56e+05  0.672250
-1             context                            -  ...     0.166 -0.037427
-2             context                            -  ...     0.167 -0.038364
+0            question                            -  ...  1115.896  0.717094
+1             context                            -  ...     0.185 -0.044588
+2             context                            -  ...     0.176 -0.046523
 3             context                            -  ...     0.162  0.000000
-4  question * context  Near-Nudity\n (Intentional)  ...     0.237 -0.084253
-5  question * context  Near-Nudity\n (Intentional)  ...     0.256 -0.120601
-6  question * context  Near-Nudity\n (Intentional)  ...     0.223 -0.034645
-7  question * context   Near-Nudity\n (Accidental)  ...     0.222  0.023571
-8  question * context   Near-Nudity\n (Accidental)  ...     0.234  0.075069
-9  question * context   Near-Nudity\n (Accidental)  ...     0.227  0.051688
+4  question * context  Near-Nudity\n (Intentional)  ...     0.258 -0.084253
+5  question * context  Near-Nudity\n (Intentional)  ...     0.276 -0.120601
+6  question * context  Near-Nudity\n (Intentional)  ...     0.169 -0.034645
+7  question * context   Near-Nudity\n (Accidental)  ...     0.169  0.023571
+8  question * context   Near-Nudity\n (Accidental)  ...     0.214  0.075069
+9  question * context   Near-Nudity\n (Accidental)  ...     0.258  0.051688
 
 [10 rows x 12 columns]

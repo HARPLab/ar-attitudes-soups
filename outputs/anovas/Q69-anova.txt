@@ -1,4 +1,6 @@
 Object 
  (Mess)
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  0.063234  0.938753  0.000957
+    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
+0  context      2     88  0.539877  ...  0.754844       False  0.675223  0.000215
+
+[1 rows x 11 columns]

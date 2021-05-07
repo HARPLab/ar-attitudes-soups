@@ -1,3 +1,5 @@
 Location
-    Source  ddof1  ddof2         F     p-unc       np2
-0  context      2    132  0.018216  0.981952  0.000276
+    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
+0  context      2     88  0.060253  ...  0.714043       False  0.599524  0.000017
+
+[1 rows x 11 columns]
