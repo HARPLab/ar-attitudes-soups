@@ -212,7 +212,6 @@ def make_anova(df, cols, title, fn):
 
     df_col = df[slice_cols]
     df_col = pd.melt(df_col, id_vars='ResponseId')
-    print(df_col.columns)
 
     df_col['context'] = df_col.apply(lambda row: context_map[slice_cols.index(row['variable'])], axis=1)
 
@@ -394,8 +393,6 @@ def make_anova_2way(df, title):
     # val_max = df_col['value'].get(df_col['value'].idxmax())
     # homogenous_data = (val_min == val_max)
     homogenous_data = False
-
-    print(df.columns)
 
     if not homogenous_data:
         aov = pg.rm_anova(dv='value', within=['question', 'context'], subject='ResponseId', data=df)
