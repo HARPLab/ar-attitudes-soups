@@ -28,4 +28,4 @@ face
 19  question * context  ...  0.407923
 20  question * context  ...  0.067582
 
-[21 rows x 12 columns]
+[21 rows x 14 columns]

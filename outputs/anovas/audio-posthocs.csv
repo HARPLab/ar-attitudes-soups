@@ -1,29 +1,29 @@
-,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
-0,question,-,Intentional Audio,Background Audio,True,True,8.176350847309243,44.0,two-sided,2.2546778975246083e-10,4.67e+07,1.2003265040883015
+,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,p-corr,p-adjust,BF10,hedges
+0,question,-,Intentional Audio,Background Audio,True,True,8.176350847309243,44.0,two-sided,2.2546778975246083e-10,,,4.67e+07,1.2003265040883015
 1,context,-,"Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,1.6725693486548334,44.0,two-sided,0.10150917216429875,0.585,0.27261276399744305
+ (Warby Parker)",True,True,1.6725693486548334,44.0,two-sided,0.10150917216429875,0.3045275164928962,bonf,0.585,0.27261276399744305
 2,context,-,"Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,2.930809006786854,44.0,two-sided,0.005344047839811275,6.712,0.4244020469432802
+ (PostureScreen)",True,True,2.930809006786854,44.0,two-sided,0.005344047839811275,0.016032143519433828,bonf,6.712,0.4244020469432802
 3,context,-,"Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,1.5811388300841893,44.0,two-sided,0.12100900712547606,0.512,0.1621494629433576
+ (PostureScreen)",True,True,1.5811388300841893,44.0,two-sided,0.12100900712547606,0.36302702137642817,bonf,0.512,0.1621494629433576
 4,question * context,Intentional Audio,"Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,1.1074659526310204,44.0,two-sided,0.27411016430609364,0.287,0.19345947348477455
+ (Warby Parker)",True,True,1.1074659526310204,44.0,two-sided,0.27411016430609364,1.0,bonf,0.287,0.19345947348477455
 5,question * context,Intentional Audio,"Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,2.27101500600704,44.0,two-sided,0.02809270523338953,1.634,0.37768664563650167
+ (PostureScreen)",True,True,2.27101500600704,44.0,two-sided,0.02809270523338953,0.16855623140033718,bonf,1.634,0.37768664563650167
 6,question * context,Intentional Audio,"Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,1.5217718205053643,44.0,two-sided,0.13522118026289867,0.471,0.19545162604643546
+ (PostureScreen)",True,True,1.5217718205053643,44.0,two-sided,0.13522118026289867,0.8113270815773921,bonf,0.471,0.19545162604643546
 7,question * context,Background Audio,"Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,1.914854215512676,44.0,two-sided,0.0620264254999426,0.859,0.2811931925403889
+ (Warby Parker)",True,True,1.914854215512676,44.0,two-sided,0.0620264254999426,0.3721585529996556,bonf,0.859,0.2811931925403889
 8,question * context,Background Audio,"Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,2.497242573808349,44.0,two-sided,0.016330892805787204,2.574,0.3372469199937285
+ (PostureScreen)",True,True,2.497242573808349,44.0,two-sided,0.016330892805787204,0.09798535683472323,bonf,2.574,0.3372469199937285
 9,question * context,Background Audio,"Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,0.9999999999999998,44.0,two-sided,0.3227784787543093,0.258,0.06672323021314196
+ (PostureScreen)",True,True,0.9999999999999998,44.0,two-sided,0.3227784787543093,1.0,bonf,0.258,0.06672323021314196

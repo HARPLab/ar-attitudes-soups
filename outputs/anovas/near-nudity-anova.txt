@@ -17,4 +17,4 @@ near-nudity
 8  question * context   Near-Nudity\n (Accidental)  ...     0.214  0.075069
 9  question * context   Near-Nudity\n (Accidental)  ...     0.258  0.051688
 
-[10 rows x 12 columns]
+[10 rows x 14 columns]

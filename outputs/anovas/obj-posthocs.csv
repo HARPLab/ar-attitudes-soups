@@ -1,76 +1,76 @@
-,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
+,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,p-corr,p-adjust,BF10,hedges
 0,question,-,"Object 
  (Meds)","Object 
- (Sexual)",True,True,2.91837797801679,44.0,two-sided,0.005525261495327418,6.521,0.39371747814320623
+ (Sexual)",True,True,2.91837797801679,44.0,two-sided,0.005525261495327418,0.03315156897196451,bonf,6.521,0.39371747814320623
 1,question,-,"Object 
  (Meds)","Object 
- (Mess)",True,True,-5.025214641580861,44.0,two-sided,8.871039928862507e-06,2190.613,-0.7754573259214022
+ (Mess)",True,True,-5.025214641580861,44.0,two-sided,8.871039928862507e-06,5.322623957317504e-05,bonf,2190.613,-0.7754573259214022
 2,question,-,"Object 
  (Meds)","Object 
- (License)",True,True,2.4188315916278085,44.0,two-sided,0.019774256840089724,2.19,0.32932168988659943
+ (License)",True,True,2.4188315916278085,44.0,two-sided,0.019774256840089724,0.11864554104053834,bonf,2.19,0.32932168988659943
 3,question,-,"Object 
  (Sexual)","Object 
- (Mess)",True,True,-6.95811087028136,44.0,two-sided,1.316771214572116e-08,9.807e+05,-1.2181534399294984
+ (Mess)",True,True,-6.95811087028136,44.0,two-sided,1.316771214572116e-08,7.900627287432696e-08,bonf,9.807e+05,-1.2181534399294984
 4,question,-,"Object 
  (Sexual)","Object 
- (License)",True,True,-0.5653289291223115,44.0,two-sided,0.5747215993672524,0.188,-0.06246498122867337
+ (License)",True,True,-0.5653289291223115,44.0,two-sided,0.5747215993672524,1.0,bonf,0.188,-0.06246498122867337
 5,question,-,"Object 
  (Mess)","Object 
- (License)",True,True,6.4095922591204495,44.0,two-sided,8.426844555618809e-08,1.701e+05,1.1413638218247957
+ (License)",True,True,6.4095922591204495,44.0,two-sided,8.426844555618809e-08,5.056106733371286e-07,bonf,1.701e+05,1.1413638218247957
 6,context,-,"Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,-1.8318285039462714,44.0,two-sided,0.07375164591135822,0.749,-0.0960872158534899
+ (Warby Parker)",True,True,-1.8318285039462714,44.0,two-sided,0.07375164591135822,0.22125493773407465,bonf,0.749,-0.0960872158534899
 7,context,-,"Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,-1.183754149031934,44.0,two-sided,0.24286633777070119,0.311,-0.07417298488680003
+ (PostureScreen)",True,True,-1.183754149031934,44.0,two-sided,0.24286633777070119,0.7285990133121035,bonf,0.311,-0.07417298488680003
 8,context,-,"Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,0.8291561975888498,44.0,two-sided,0.411491710486351,0.223,0.021114413465357224
+ (PostureScreen)",True,True,0.8291561975888498,44.0,two-sided,0.411491710486351,1.0,bonf,0.223,0.021114413465357224
 9,question * context,"Object 
  (Meds)","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,-2.0055892051218995,44.0,two-sided,0.05107386604665738,1.003,-0.14894133827449454
+ (Warby Parker)",True,True,-2.0055892051218995,44.0,two-sided,0.05107386604665738,0.5618125265132312,bonf,1.003,-0.14894133827449454
 10,question * context,"Object 
  (Meds)","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,-2.071879081131249,44.0,two-sided,0.044169729275239954,1.128,-0.17246736518336026
+ (PostureScreen)",True,True,-2.071879081131249,44.0,two-sided,0.044169729275239954,0.4858670220276395,bonf,1.128,-0.17246736518336026
 11,question * context,"Object 
  (Meds)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,-0.4432026302139593,44.0,two-sided,0.6597907603533084,0.177,-0.019883815715429666
+ (PostureScreen)",True,True,-0.4432026302139593,44.0,two-sided,0.6597907603533084,1.0,bonf,0.177,-0.019883815715429666
 12,question * context,"Object 
  (Sexual)","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,1.0,44.0,two-sided,0.3227784787543093,0.258,0.05370406128697819
+ (Warby Parker)",True,True,1.0,44.0,two-sided,0.3227784787543093,1.0,bonf,0.258,0.05370406128697819
 13,question * context,"Object 
  (Sexual)","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,1.0,44.0,two-sided,0.3227784787543093,0.258,0.05370406128697819
+ (PostureScreen)",True,True,1.0,44.0,two-sided,0.3227784787543093,1.0,bonf,0.258,0.05370406128697819
 14,question * context,"Object 
  (Sexual)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,,44.0,two-sided,,nan,0.0
+ (PostureScreen)",True,True,,44.0,two-sided,,,bonf,nan,0.0
 15,question * context,"Object 
  (Mess)","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,-0.530235947238971,44.0,two-sided,0.5986142561422427,0.185,-0.037369655893241725
+ (Warby Parker)",True,True,-0.530235947238971,44.0,two-sided,0.5986142561422427,1.0,bonf,0.185,-0.037369655893241725
 16,question * context,"Object 
  (Mess)","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,0.4224914032275889,44.0,two-sided,0.6747239278162763,0.176,0.03735608912717718
+ (PostureScreen)",True,True,0.4224914032275889,44.0,two-sided,0.6747239278162763,1.0,bonf,0.176,0.03735608912717718
 17,question * context,"Object 
  (Mess)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,1.4305633952771812,44.0,two-sided,0.1596192023464756,0.417,0.0735597362452054
+ (PostureScreen)",True,True,1.4305633952771812,44.0,two-sided,0.1596192023464756,1.0,bonf,0.417,0.0735597362452054
 18,question * context,"Object 
  (License)","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,-2.2110831935702664,44.0,two-sided,0.03227278717931753,1.457,-0.15800173069263776
+ (Warby Parker)",True,True,-2.2110831935702664,44.0,two-sided,0.03227278717931753,0.35500065897249283,bonf,1.457,-0.15800173069263776
 19,question * context,"Object 
  (License)","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,-2.2110831935702664,44.0,two-sided,0.03227278717931753,1.457,-0.1554975828016499
+ (PostureScreen)",True,True,-2.2110831935702664,44.0,two-sided,0.03227278717931753,0.35500065897249283,bonf,1.457,-0.1554975828016499
 20,question * context,"Object 
  (License)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,0.0,44.0,two-sided,1.0,0.162,0.0
+ (PostureScreen)",True,True,0.0,44.0,two-sided,1.0,1.0,bonf,0.162,0.0

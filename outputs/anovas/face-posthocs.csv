@@ -1,76 +1,76 @@
-,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
+,Contrast,question,A,B,Paired,Parametric,T,dof,Tail,p-unc,p-corr,p-adjust,BF10,hedges
 0,question,-,"My Face
  (for core functionality)","My Face
- (for Improving the App)",True,True,3.3989084572260566,44.0,two-sided,0.0014472963522193854,21.185,0.5201089509214807
+ (for Improving the App)",True,True,3.3989084572260566,44.0,two-sided,0.0014472963522193854,0.008683778113316313,bonf,21.185,0.5201089509214807
 1,question,-,"My Face
  (for core functionality)","My Face
- in the Background of Someone Else",True,True,7.611103442517913,44.0,two-sided,1.4687789746128833e-09,7.847e+06,1.0663664793610454
+ in the Background of Someone Else",True,True,7.611103442517913,44.0,two-sided,1.4687789746128833e-09,8.8126738476773e-09,bonf,7.847e+06,1.0663664793610454
 2,question,-,"My Face
  (for core functionality)","Other Faces
- in the Background",True,True,6.1320774528083355,44.0,two-sided,2.1579498602259104e-07,7.024e+04,0.8695248496548635
+ in the Background",True,True,6.1320774528083355,44.0,two-sided,2.1579498602259104e-07,1.2947699161355462e-06,bonf,7.024e+04,0.8695248496548635
 3,question,-,"My Face
  (for Improving the App)","My Face
- in the Background of Someone Else",True,True,4.134168603288981,44.0,two-sided,0.00015742256186204772,156.057,0.575903829568819
+ in the Background of Someone Else",True,True,4.134168603288981,44.0,two-sided,0.00015742256186204772,0.0009445353711722863,bonf,156.057,0.575903829568819
 4,question,-,"My Face
  (for Improving the App)","Other Faces
- in the Background",True,True,2.3342914146842784,44.0,two-sided,0.02420964866747393,1.849,0.3724435094880063
+ in the Background",True,True,2.3342914146842784,44.0,two-sided,0.02420964866747393,0.14525789200484357,bonf,1.849,0.3724435094880063
 5,question,-,"My Face
  in the Background of Someone Else","Other Faces
- in the Background",True,True,-2.1295359445221687,44.0,two-sided,0.038841863702721885,1.252,-0.19928879348870732
+ in the Background",True,True,-2.1295359445221687,44.0,two-sided,0.038841863702721885,0.2330511822163313,bonf,1.252,-0.19928879348870732
 6,context,-,"Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,0.06144532297747106,44.0,two-sided,0.9512828235815349,0.162,0.005249556909177588
+ (Warby Parker)",True,True,0.06144532297747106,44.0,two-sided,0.9512828235815349,1.0,bonf,0.162,0.005249556909177588
 7,context,-,"Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,1.6469149240696337,44.0,two-sided,0.10670031048362917,0.563,0.1420008900698483
+ (PostureScreen)",True,True,1.6469149240696337,44.0,two-sided,0.10670031048362917,0.3201009314508875,bonf,0.563,0.1420008900698483
 8,context,-,"Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,2.5092546737590307,44.0,two-sided,0.015854388818756913,2.639,0.144088088134628
+ (PostureScreen)",True,True,2.5092546737590307,44.0,two-sided,0.015854388818756913,0.04756316645627074,bonf,2.639,0.144088088134628
 9,question * context,"My Face
  (for core functionality)","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,-1.4214106244380285,44.0,two-sided,0.16224680770729502,0.412,-0.1457463639195324
+ (Warby Parker)",True,True,-1.4214106244380285,44.0,two-sided,0.16224680770729502,1.0,bonf,0.412,-0.1457463639195324
 10,question * context,"My Face
  (for core functionality)","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,-0.2598777680682735,44.0,two-sided,0.7961702797462433,0.167,-0.03170759210660269
+ (PostureScreen)",True,True,-0.2598777680682735,44.0,two-sided,0.7961702797462433,1.0,bonf,0.167,-0.03170759210660269
 11,question * context,"My Face
  (for core functionality)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,1.044554027998986,44.0,two-sided,0.30193410199496523,0.269,0.11675250919112692
+ (PostureScreen)",True,True,1.044554027998986,44.0,two-sided,0.30193410199496523,1.0,bonf,0.269,0.11675250919112692
 12,question * context,"My Face
  (for Improving the App)","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,-2.945155802538778,44.0,two-sided,0.005141811034150064,6.941,-0.3015334681918707
+ (Warby Parker)",True,True,-2.945155802538778,44.0,two-sided,0.005141811034150064,0.06170173240980077,bonf,6.941,-0.3015334681918707
 13,question * context,"My Face
  (for Improving the App)","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,-1.137592917989042,44.0,two-sided,0.26144749238862935,0.296,-0.10978091923685286
+ (PostureScreen)",True,True,-1.137592917989042,44.0,two-sided,0.26144749238862935,1.0,bonf,0.296,-0.10978091923685286
 14,question * context,"My Face
  (for Improving the App)","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,2.693214806611312,44.0,two-sided,0.009975989337153773,3.915,0.19368859421708925
+ (PostureScreen)",True,True,2.693214806611312,44.0,two-sided,0.009975989337153773,0.11971187204584527,bonf,3.915,0.19368859421708925
 15,question * context,"My Face
  in the Background of Someone Else","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,1.4305633952771812,44.0,two-sided,0.1596192023464756,0.417,0.10334059413855988
+ (Warby Parker)",True,True,1.4305633952771812,44.0,two-sided,0.1596192023464756,1.0,bonf,0.417,0.10334059413855988
 16,question * context,"My Face
  in the Background of Someone Else","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,2.1189138534559038,44.0,two-sided,0.03977878048886094,1.228,0.17456668481809867
+ (PostureScreen)",True,True,2.1189138534559038,44.0,two-sided,0.03977878048886094,0.47734536586633125,bonf,1.228,0.17456668481809867
 17,question * context,"My Face
  in the Background of Someone Else","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,1.664828382538899,44.0,two-sided,0.10305317626018161,0.578,0.07043221607894147
+ (PostureScreen)",True,True,1.664828382538899,44.0,two-sided,0.10305317626018161,1.0,bonf,0.578,0.07043221607894147
 18,question * context,"Other Faces
  in the Background","Social
  (SnapChat)","Commercial
- (Warby Parker)",True,True,2.902046691560975,44.0,two-sided,0.005772053063318169,6.278,0.3461736232455921
+ (Warby Parker)",True,True,2.902046691560975,44.0,two-sided,0.005772053063318169,0.06926463675981803,bonf,6.278,0.3461736232455921
 19,question * context,"Other Faces
  in the Background","Social
  (SnapChat)","Medical
- (PostureScreen)",True,True,3.2153298220651725,44.0,two-sided,0.002443102266377111,13.325,0.4079233979153681
+ (PostureScreen)",True,True,3.2153298220651725,44.0,two-sided,0.002443102266377111,0.029317227196525332,bonf,13.325,0.4079233979153681
 20,question * context,"Other Faces
  in the Background","Commercial
  (Warby Parker)","Medical
- (PostureScreen)",True,True,1.4305633952771812,44.0,two-sided,0.1596192023464756,0.417,0.06758193806120873
+ (PostureScreen)",True,True,1.4305633952771812,44.0,two-sided,0.1596192023464756,1.0,bonf,0.417,0.06758193806120873
