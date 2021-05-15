@@ -1,12 +1,12 @@
 face
      Source  ddof1  ddof2          F     p-unc       np2
 0  question      3    176  11.002259  0.000001  0.157922
-                                             A  ... hedges
-0            My Face\n (for Improving the App)  ... -0.482
-1            My Face\n (for Improving the App)  ...  0.585
-2            My Face\n (for Improving the App)  ...  0.482
-3           My Face\n (for core functionality)  ...  1.067
-4           My Face\n (for core functionality)  ...  0.964
-5  My Face\n in the Background of Someone Else  ... -0.103
+   Contrast                                            A  ...      BF10    hedges
+0  question           My Face\n (for core functionality)  ...     2.177  0.480406
+1  question           My Face\n (for core functionality)  ...  6379.056  1.055863
+2  question           My Face\n (for core functionality)  ...   690.441  0.924437
+3  question            My Face\n (for Improving the App)  ...      8.69  0.612151
+4  question            My Face\n (for Improving the App)  ...     2.315  0.486938
+5  question  My Face\n in the Background of Someone Else  ...     0.246 -0.103549
 
-[6 rows x 9 columns]
+[6 rows x 13 columns]

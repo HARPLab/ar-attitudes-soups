@@ -1,7 +1,7 @@
 audio
      Source  ddof1  ddof2          F         p-unc       np2
 0  question      1     88  29.442379  5.016821e-07  0.250696
-                  A                  B  mean(A)  ...      T  p-tukey  hedges
-0  Background Audio  Intentional Audio   -1.444  ... -5.426    0.001  -1.134
+   Contrast                  A  ...       BF10    hedges
+0  question  Intentional Audio  ...  2.614e+04  1.134142
 
-[1 rows x 9 columns]
+[1 rows x 11 columns]

@@ -1,7 +1,7 @@
 near-nudity
      Source  ddof1  ddof2         F     p-unc       np2
 0  question      1     88  6.575677  0.012034  0.069528
-                            A                            B  ...  p-tukey  hedges
-0  Near-Nudity\n (Accidental)  Near-Nudity\n (Intentional)  ...     0.01  -0.536
+   Contrast                            A  ...   BF10    hedges
+0  question  Near-Nudity\n (Intentional)  ...  3.762  0.535983
 
-[1 rows x 9 columns]
+[1 rows x 11 columns]

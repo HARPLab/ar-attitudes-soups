@@ -1,19 +1,19 @@
-,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
-0,"Object 
- (License)","Object 
- (Meds)",-1.6,-1.267,-0.333,0.214,-1.555,0.406,-0.325
-1,"Object 
- (License)","Object 
- (Mess)",-1.6,-0.533,-1.067,0.214,-4.975,0.001,-1.04
-2,"Object 
- (License)","Object 
- (Sexual)",-1.6,-1.711,0.111,0.214,0.518,0.9,0.108
-3,"Object 
+,Contrast,A,B,Paired,Parametric,T,dof,Tail,p-unc,p-corr,p-adjust,BF10,hedges
+0,question,"Object 
  (Meds)","Object 
- (Mess)",-1.267,-0.533,-0.733,0.214,-3.42,0.004,-0.715
-4,"Object 
+ (Sexual)",False,True,2.210469259588261,88.0,two-sided,0.02966633994157534,0.17799803964945204,bonf,1.838,0.46202486423809
+1,question,"Object 
  (Meds)","Object 
- (Sexual)",-1.267,-1.711,0.444,0.214,2.073,0.163,0.433
-5,"Object 
+ (Mess)",False,True,-3.0297376693086124,88.0,two-sided,0.0032129920714182945,0.019277952428509767,bonf,11.151,-0.6332655970072522
+2,question,"Object 
+ (Meds)","Object 
+ (License)",False,True,1.549756988979508,88.0,two-sided,0.12478891076172717,0.748733464570363,bonf,0.631,0.3239250034034225
+3,question,"Object 
+ (Sexual)","Object 
+ (Mess)",False,True,-5.510677596046385,88.0,two-sided,3.514383965556956e-07,2.1086303793341733e-06,bonf,3.624e+04,-1.1518233321405544
+4,question,"Object 
+ (Sexual)","Object 
+ (License)",False,True,-0.6083758135822098,88.0,two-sided,0.5445053656419825,1.0,bonf,0.26,-0.12716067027705016
+5,question,"Object 
  (Mess)","Object 
- (Sexual)",-0.533,-1.711,1.178,0.214,5.493,0.001,1.148
+ (License)",False,True,4.699603654544065,88.0,two-sided,9.566581869221731e-06,5.7399491215330385e-05,bonf,1793.975,0.9822953796100303

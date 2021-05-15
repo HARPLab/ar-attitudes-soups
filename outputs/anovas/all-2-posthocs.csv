@@ -1,260 +1,260 @@
-,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
-0,Background Audio,Intentional Audio,-1.111,0.156,-1.267,0.252,-5.023,0.001,-1.05
-1,Background Audio,Location,-1.111,-0.4,-0.711,0.252,-2.82,0.553,-0.589
-2,Background Audio,"My Face
- (for Improving the App)",-1.111,-0.4,-0.711,0.252,-2.82,0.553,-0.589
-3,Background Audio,"My Face
- (for core functionality)",-1.111,0.311,-1.422,0.252,-5.64,0.001,-1.179
-4,Background Audio,"My Face
- in the Background of Someone Else",-1.111,-0.8,-0.311,0.252,-1.234,0.9,-0.258
-5,Background Audio,"Near-Nudity
- (Accidental)",-1.111,-1.622,0.511,0.252,2.027,0.5,0.424
-6,Background Audio,"Near-Nudity
- (Intentional)",-1.111,-1.0,-0.111,0.252,-0.441,0.9,-0.092
-7,Background Audio,"Object 
- (License)",-1.111,-1.733,0.622,0.252,2.468,0.468,0.516
-8,Background Audio,"Object 
- (Meds)",-1.111,-1.444,0.333,0.252,1.322,0.9,0.276
-9,Background Audio,"Object 
- (Mess)",-1.111,-0.489,-0.622,0.252,-2.468,0.468,-0.516
-10,Background Audio,"Object 
- (Sexual)",-1.111,-1.667,0.556,0.252,2.203,0.5,0.461
-11,Background Audio,"Other Faces
- in the Background",-1.111,-0.333,-0.778,0.252,-3.085,0.73,-0.645
-12,Background Audio,Payment Information,-1.111,-0.867,-0.244,0.252,-0.969,0.9,-0.203
-13,Background Audio,"Pupil Dialation
- (to assess excitement)",-1.111,-1.111,0.0,0.252,0.0,0.9,0.0
-14,Intentional Audio,Location,0.156,-0.4,0.556,0.252,2.203,0.5,0.461
-15,Intentional Audio,"My Face
- (for Improving the App)",0.156,-0.4,0.556,0.252,2.203,0.5,0.461
-16,Intentional Audio,"My Face
- (for core functionality)",0.156,0.311,-0.156,0.252,-0.617,0.9,-0.129
-17,Intentional Audio,"My Face
- in the Background of Someone Else",0.156,-0.8,0.956,0.252,3.79,0.669,0.792
-18,Intentional Audio,"Near-Nudity
- (Accidental)",0.156,-1.622,1.778,0.252,7.05,0.001,1.474
-19,Intentional Audio,"Near-Nudity
- (Intentional)",0.156,-1.0,1.156,0.252,4.583,0.001,0.958
-20,Intentional Audio,"Object 
- (License)",0.156,-1.733,1.889,0.252,7.491,0.001,1.566
-21,Intentional Audio,"Object 
- (Meds)",0.156,-1.444,1.6,0.252,6.345,0.001,1.326
-22,Intentional Audio,"Object 
- (Mess)",0.156,-0.489,0.644,0.252,2.556,0.405,0.534
-23,Intentional Audio,"Object 
- (Sexual)",0.156,-1.667,1.822,0.252,7.227,0.001,1.51
-24,Intentional Audio,"Other Faces
- in the Background",0.156,-0.333,0.489,0.252,1.939,0.5,0.405
-25,Intentional Audio,Payment Information,0.156,-0.867,1.022,0.252,4.054,0.669,0.847
-26,Intentional Audio,"Pupil Dialation
- (to assess excitement)",0.156,-1.111,1.267,0.252,5.023,0.001,1.05
-27,Location,"My Face
- (for Improving the App)",-0.4,-0.4,0.0,0.252,0.0,0.9,0.0
-28,Location,"My Face
- (for core functionality)",-0.4,0.311,-0.711,0.252,-2.82,0.553,-0.589
-29,Location,"My Face
- in the Background of Someone Else",-0.4,-0.8,0.4,0.252,1.586,0.9,0.332
-30,Location,"Near-Nudity
- (Accidental)",-0.4,-1.622,1.222,0.252,4.847,0.001,1.013
-31,Location,"Near-Nudity
- (Intentional)",-0.4,-1.0,0.6,0.252,2.38,0.5,0.497
-32,Location,"Object 
- (License)",-0.4,-1.733,1.333,0.252,5.288,0.001,1.105
-33,Location,"Object 
- (Meds)",-0.4,-1.444,1.044,0.252,4.142,0.669,0.866
-34,Location,"Object 
- (Mess)",-0.4,-0.489,0.089,0.252,0.353,0.9,0.074
-35,Location,"Object 
- (Sexual)",-0.4,-1.667,1.267,0.252,5.023,0.001,1.05
-36,Location,"Other Faces
- in the Background",-0.4,-0.333,-0.067,0.252,-0.264,0.9,-0.055
-37,Location,Payment Information,-0.4,-0.867,0.467,0.252,1.851,0.5,0.387
-38,Location,"Pupil Dialation
- (to assess excitement)",-0.4,-1.111,0.711,0.252,2.82,0.553,0.589
-39,"My Face
- (for Improving the App)","My Face
- (for core functionality)",-0.4,0.311,-0.711,0.252,-2.82,0.553,-0.589
-40,"My Face
- (for Improving the App)","My Face
- in the Background of Someone Else",-0.4,-0.8,0.4,0.252,1.586,0.9,0.332
-41,"My Face
- (for Improving the App)","Near-Nudity
- (Accidental)",-0.4,-1.622,1.222,0.252,4.847,0.001,1.013
-42,"My Face
- (for Improving the App)","Near-Nudity
- (Intentional)",-0.4,-1.0,0.6,0.252,2.38,0.5,0.497
-43,"My Face
- (for Improving the App)","Object 
- (License)",-0.4,-1.733,1.333,0.252,5.288,0.001,1.105
-44,"My Face
- (for Improving the App)","Object 
- (Meds)",-0.4,-1.444,1.044,0.252,4.142,0.669,0.866
-45,"My Face
- (for Improving the App)","Object 
- (Mess)",-0.4,-0.489,0.089,0.252,0.353,0.9,0.074
-46,"My Face
- (for Improving the App)","Object 
- (Sexual)",-0.4,-1.667,1.267,0.252,5.023,0.001,1.05
-47,"My Face
- (for Improving the App)","Other Faces
- in the Background",-0.4,-0.333,-0.067,0.252,-0.264,0.9,-0.055
-48,"My Face
- (for Improving the App)",Payment Information,-0.4,-0.867,0.467,0.252,1.851,0.5,0.387
-49,"My Face
- (for Improving the App)","Pupil Dialation
- (to assess excitement)",-0.4,-1.111,0.711,0.252,2.82,0.553,0.589
-50,"My Face
- (for core functionality)","My Face
- in the Background of Someone Else",0.311,-0.8,1.111,0.252,4.407,0.669,0.921
-51,"My Face
- (for core functionality)","Near-Nudity
- (Accidental)",0.311,-1.622,1.933,0.252,7.667,0.001,1.603
-52,"My Face
- (for core functionality)","Near-Nudity
- (Intentional)",0.311,-1.0,1.311,0.252,5.2,0.001,1.087
-53,"My Face
- (for core functionality)","Object 
- (License)",0.311,-1.733,2.044,0.252,8.108,0.001,1.695
-54,"My Face
- (for core functionality)","Object 
- (Meds)",0.311,-1.444,1.756,0.252,6.962,0.001,1.455
-55,"My Face
- (for core functionality)","Object 
- (Mess)",0.311,-0.489,0.8,0.252,3.173,0.69,0.663
-56,"My Face
- (for core functionality)","Object 
- (Sexual)",0.311,-1.667,1.978,0.252,7.844,0.001,1.639
-57,"My Face
- (for core functionality)","Other Faces
- in the Background",0.311,-0.333,0.644,0.252,2.556,0.405,0.534
-58,"My Face
- (for core functionality)",Payment Information,0.311,-0.867,1.178,0.252,4.671,0.001,0.976
-59,"My Face
+,Contrast,A,B,Paired,Parametric,T,dof,Tail,p-unc,p-corr,p-adjust,BF10,hedges
+0,question,"My Face
+ (for core functionality)",Intentional Audio,False,True,0.519458657277724,88.0,two-sided,0.604745054611142,1.0,bonf,0.249,0.10857550475537749
+1,question,"My Face
+ (for core functionality)",Background Audio,False,True,4.881244390586747,88.0,two-sided,4.668247708444951e-06,0.0004901660093867198,bonf,3427.477,1.0202613165015746
+2,question,"My Face
  (for core functionality)","Pupil Dialation
- (to assess excitement)",0.311,-1.111,1.422,0.252,5.64,0.001,1.179
-60,"My Face
+ (to assess excitement)",False,True,5.309088883530289,88.0,two-sided,8.174479277995666e-07,8.58320324189545e-05,bonf,1.672e+04,1.1096879361705925
+3,question,"My Face
+ (for core functionality)","Other Faces
+ in the Background",False,True,2.176144012759555,88.0,two-sided,0.032223652345259625,1.0,bonf,1.724,0.45485031637356743
+4,question,"My Face
+ (for core functionality)","My Face
+ in the Background of Someone Else",False,True,3.874392472448769,88.0,two-sided,0.000205255839484656,0.02155186314588888,bonf,117.834,0.8098125085085561
+5,question,"My Face
+ (for core functionality)","My Face
+ (for Improving the App)",False,True,2.562797305514917,88.0,two-sided,0.012082596885801631,1.0,bonf,3.75,0.5356672896554225
+6,question,"My Face
+ (for core functionality)","Near-Nudity
+ (Intentional)",False,True,4.532978463253829,88.0,two-sided,1.8243319792681083e-05,0.0019155485782315137,bonf,1004.933,0.9474679414764383
+7,question,"My Face
+ (for core functionality)","Near-Nudity
+ (Accidental)",False,True,7.538705585925398,88.0,two-sided,4.0142686173023724e-11,4.214982048167491e-09,bonf,1.744e+08,1.575714934627454
+8,question,"My Face
+ (for core functionality)","Object 
+ (Meds)",False,True,6.884369693890207,88.0,two-sided,8.215598806211649e-10,8.62637874652223e-08,bonf,1.013e+07,1.4389478430371454
+9,question,"My Face
+ (for core functionality)","Object 
+ (Sexual)",False,True,7.979284468906504,88.0,two-sided,5.1084912026189545e-12,5.363915762749902e-10,bonf,1.232e+09,1.6678032537536067
+10,question,"My Face
+ (for core functionality)","Object 
+ (Mess)",False,True,2.917369495987679,88.0,two-sided,0.004479244426508277,0.4703206647833691,bonf,8.454,0.6097787786323353
+11,question,"My Face
+ (for core functionality)","Object 
+ (License)",False,True,8.50375131384773,88.0,two-sided,4.306940390360024e-13,4.522287409878025e-11,bonf,1.299e+10,1.77742555308225
+12,question,"My Face
+ (for core functionality)",Location,False,True,2.5298221281347035,88.0,two-sided,0.013191999660278179,1.0,bonf,3.494,0.5287749287749288
+13,question,"My Face
+ (for core functionality)",Payment Information,False,True,4.05732760556517,88.0,two-sided,0.00010714345652257713,0.0112500629348706,bonf,208.474,0.8480489959312427
+14,question,Intentional Audio,Background Audio,False,True,4.36994813476174,88.0,two-sided,3.3887622430877526e-05,0.00355820035524214,bonf,578.017,0.9133918894971952
+15,question,Intentional Audio,"Pupil Dialation
+ (to assess excitement)",False,True,4.7575146384587015,88.0,two-sided,7.622088787585137e-06,0.0008003193226964393,bonf,2201.414,0.9943997390644739
+16,question,Intentional Audio,"Other Faces
+ in the Background",False,True,1.6591696257312958,88.0,two-sided,0.10064166323377663,1.0,bonf,0.735,0.3467940654461999
+17,question,Intentional Audio,"My Face
+ in the Background of Someone Else",False,True,3.3498533163974975,88.0,two-sided,0.0011922257306385057,0.1251837017170431,bonf,25.766,0.7001750949544345
+18,question,Intentional Audio,"My Face
+ (for Improving the App)",False,True,2.0136660786681215,88.0,two-sided,0.04709949442436124,1.0,bonf,1.288,0.4208897240175974
+19,question,Intentional Audio,"Near-Nudity
+ (Intentional)",False,True,4.0162360293959045,88.0,two-sided,0.0001241824833539118,0.01303916075216074,bonf,183.08,0.8394601726220827
+20,question,Intentional Audio,"Near-Nudity
+ (Accidental)",False,True,6.9787442264994946,88.0,two-sided,5.336661365963405e-10,5.6034944342615755e-08,bonf,1.519e+07,1.458673691033992
+21,question,Intentional Audio,"Object 
+ (Meds)",False,True,6.317026875946831,88.0,two-sided,1.0605672399991603e-08,1.1135956019991184e-06,bonf,9.247e+05,1.3203637517634357
+22,question,Intentional Audio,"Object 
+ (Sexual)",False,True,7.404644626581344,88.0,two-sided,7.486566673909551e-11,7.860895007605029e-09,bonf,9.675e+07,1.5476939629392514
+23,question,Intentional Audio,"Object 
+ (Mess)",False,True,2.3639035232237444,88.0,two-sided,0.02028439370268313,1.0,bonf,2.478,0.49409517895436894
+24,question,Intentional Audio,"Object 
+ (License)",False,True,7.916908790364626,88.0,two-sided,6.847204562701661e-12,7.189564790836743e-10,bonf,9.328e+08,1.6547656988158654
+25,question,Intentional Audio,Location,False,True,1.9874643050099277,88.0,two-sided,0.049980327958317264,1.0,bonf,1.232,0.41541311724520597
+26,question,Intentional Audio,Payment Information,False,True,3.5398899694711288,88.0,two-sided,0.0006421674266102414,0.06742757979407535,bonf,43.785,0.7398959182392425
+27,question,Background Audio,"Pupil Dialation
+ (to assess excitement)",False,True,0.0,88.0,two-sided,1.0,1.0,bonf,0.221,0.0
+28,question,Background Audio,"Other Faces
+ in the Background",False,True,-2.7154117574157888,88.0,two-sided,0.00796670165696749,0.8365036739815865,bonf,5.26,-0.5675662500749874
+29,question,Background Audio,"My Face
+ in the Background of Someone Else",False,True,-1.1241774379852272,88.0,two-sided,0.26399496559500213,1.0,bonf,0.385,-0.23497179429737713
+30,question,Background Audio,"My Face
+ (for Improving the App)",False,True,-2.6624678502270713,88.0,two-sided,0.009222058580416376,0.9683161509437195,bonf,4.668,-0.5565000923236431
+31,question,Background Audio,"Near-Nudity
+ (Intentional)",False,True,-0.39783587230787043,88.0,two-sided,0.691714632254667,1.0,bonf,0.237,-0.08315431852073067
+32,question,Background Audio,"Near-Nudity
+ (Accidental)",False,True,2.084653552310089,88.0,two-sided,0.03999856002013869,1.0,bonf,1.459,0.43572728745792505
+33,question,Background Audio,"Object 
+ (Meds)",False,True,1.3680115410915017,88.0,two-sided,0.1747915932434704,1.0,bonf,0.501,0.2859371799934792
+34,question,Background Audio,"Object 
+ (Sexual)",False,True,2.3522753229949562,88.0,two-sided,0.02088983563330922,1.0,bonf,2.421,0.4916646915776569
+35,question,Background Audio,"Object 
+ (Mess)",False,True,-2.3595471767432312,88.0,two-sided,0.020509366039442405,1.0,bonf,2.456,-0.4931846300369829
+36,question,Background Audio,"Object 
+ (License)",False,True,2.7248635963285657,88.0,two-sided,0.007759696873670028,0.8147681717353529,bonf,5.375,0.5695418417153295
+37,question,Background Audio,Location,False,True,-2.6255500094070165,88.0,two-sided,0.010200934803529075,1.0,bonf,4.301,-0.5487836491662176
+38,question,Background Audio,Payment Information,False,True,-0.8718583970660326,88.0,two-sided,0.3856581525843902,1.0,bonf,0.308,-0.18223291538300102
+39,question,"Pupil Dialation
+ (to assess excitement)","Other Faces
+ in the Background",False,True,-2.9628536293014034,88.0,two-sided,0.003919542090552442,0.4115519195080064,bonf,9.446,-0.6192857194903028
+40,question,"Pupil Dialation
+ (to assess excitement)","My Face
+ in the Background of Someone Else",False,True,-1.2350270558954464,88.0,two-sided,0.2201077724608226,1.0,bonf,0.431,-0.25814120931803797
+41,question,"Pupil Dialation
+ (to assess excitement)","My Face
+ (for Improving the App)",False,True,-2.9475423950231705,88.0,two-sided,0.0041003062497069675,0.4305321562192316,bonf,9.098,-0.6160854167002808
+42,question,"Pupil Dialation
+ (to assess excitement)","Near-Nudity
+ (Intentional)",False,True,-0.43624696982915684,88.0,two-sided,0.6637259527391706,1.0,bonf,0.24,-0.09118287718108231
+43,question,"Pupil Dialation
+ (to assess excitement)","Near-Nudity
+ (Accidental)",False,True,2.3580584302428895,88.0,two-sided,0.020586754391330286,1.0,bonf,2.449,0.4928734572411063
+44,question,"Pupil Dialation
+ (to assess excitement)","Object 
+ (Meds)",False,True,1.5501330979497283,88.0,two-sided,0.12469864860365382,1.0,bonf,0.632,0.3240036164378046
+45,question,"Pupil Dialation
+ (to assess excitement)","Object 
+ (Sexual)",False,True,2.6901379342448513,88.0,two-sided,0.008545162915001027,0.8972421060751078,bonf,4.967,0.562283600398373
+46,question,"Pupil Dialation
+ (to assess excitement)","Object 
+ (Mess)",False,True,-2.6198300993201107,88.0,two-sided,0.010360746785206675,1.0,bonf,4.247,-0.5475880927612173
+47,question,"Pupil Dialation
+ (to assess excitement)","Object 
+ (License)",False,True,3.150246122592866,88.0,two-sided,0.002229279058810403,0.23407430117509231,bonf,15.157,0.6584538693737138
+48,question,"Pupil Dialation
+ (to assess excitement)",Location,False,True,-2.897683730604329,88.0,two-sided,0.004743600777726425,0.4980780816612746,bonf,8.061,-0.6056641260357372
+49,question,"Pupil Dialation
+ (to assess excitement)",Payment Information,False,True,-0.9552912745683221,88.0,two-sided,0.3420473325203457,1.0,bonf,0.33,-0.19967177535980465
+50,question,"Other Faces
+ in the Background","My Face
+ in the Background of Someone Else",False,True,1.6562012391401182,88.0,two-sided,0.10124280028034739,1.0,bonf,0.732,0.3461736232455921
+51,question,"Other Faces
+ in the Background","My Face
+ (for Improving the App)",False,True,0.24483770969193763,88.0,two-sided,0.807152112169986,1.0,bonf,0.227,0.05117515617559557
+52,question,"Other Faces
+ in the Background","Near-Nudity
+ (Intentional)",False,True,2.345207879911715,88.0,two-sided,0.02126559205419056,1.0,bonf,2.387,0.49018747834934306
+53,question,"Other Faces
+ in the Background","Near-Nudity
+ (Accidental)",False,True,5.138398533920849,88.0,two-sided,1.6519120052840496e-06,0.00017345076055482522,bonf,8799.533,1.0740108122915915
+54,question,"Other Faces
+ in the Background","Object 
+ (Meds)",False,True,4.455961811760737,88.0,two-sided,2.448096213837816e-05,0.002570501024529707,bonf,772.51,0.9313701795212254
+55,question,"Other Faces
+ in the Background","Object 
+ (Sexual)",False,True,5.508613944197479,88.0,two-sided,3.5451324292639445e-07,3.722389050727142e-05,bonf,3.595e+04,1.1513919945586408
+56,question,"Other Faces
+ in the Background","Object 
+ (Mess)",False,True,0.5783346693404193,88.0,two-sided,0.5645153456031469,1.0,bonf,0.256,0.12088157115379183
+57,question,"Other Faces
+ in the Background","Object 
+ (License)",False,True,5.972362819442472,88.0,two-sided,4.841655381077952e-08,5.08373815013185e-06,bonf,2.256e+05,1.2483232276876393
+58,question,"Other Faces
+ in the Background",Location,False,True,0.24156870175124623,88.0,two-sided,0.8096763874766766,1.0,bonf,0.227,0.05049187910967858
+59,question,"Other Faces
+ in the Background",Payment Information,False,True,1.8691700099387938,88.0,two-sided,0.06492528556392087,1.0,bonf,1.012,0.3906876407956662
+60,question,"My Face
+ in the Background of Someone Else","My Face
+ (for Improving the App)",False,True,-1.526241057207505,88.0,two-sided,0.13053609937231897,1.0,bonf,0.612,-0.3190097822858868
+61,question,"My Face
  in the Background of Someone Else","Near-Nudity
- (Accidental)",-0.8,-1.622,0.822,0.252,3.261,0.669,0.682
-61,"My Face
+ (Intentional)",False,True,0.7285815666043921,88.0,two-sided,0.46819213604134124,1.0,bonf,0.279,0.15228567325087847
+62,question,"My Face
  in the Background of Someone Else","Near-Nudity
- (Intentional)",-0.8,-1.0,0.2,0.252,0.793,0.9,0.166
-62,"My Face
+ (Accidental)",False,True,3.429991800281744,88.0,two-sided,0.0009208795265024204,0.09669235028275415,bonf,32.128,0.7169253718362593
+63,question,"My Face
  in the Background of Someone Else","Object 
- (License)",-0.8,-1.733,0.933,0.252,3.701,0.669,0.774
-63,"My Face
+ (Meds)",False,True,2.705868689727329,88.0,two-sided,0.008180795350551764,0.8589835118079352,bonf,5.147,0.565571590102201
+64,question,"My Face
  in the Background of Someone Else","Object 
- (Meds)",-0.8,-1.444,0.644,0.252,2.556,0.405,0.534
-64,"My Face
+ (Sexual)",False,True,3.759904537255909,88.0,two-sided,0.00030545695453659794,0.032072980226342786,bonf,83.307,0.7858826246230715
+65,question,"My Face
  in the Background of Someone Else","Object 
- (Mess)",-0.8,-0.489,-0.311,0.252,-1.234,0.9,-0.258
-65,"My Face
+ (Mess)",False,True,-1.2029047617213144,88.0,two-sided,0.23223958990744273,1.0,bonf,0.417,-0.2514271152222061
+66,question,"My Face
  in the Background of Someone Else","Object 
- (Sexual)",-0.8,-1.667,0.867,0.252,3.437,0.669,0.718
-66,"My Face
- in the Background of Someone Else","Other Faces
- in the Background",-0.8,-0.333,-0.467,0.252,-1.851,0.5,-0.387
-67,"My Face
- in the Background of Someone Else",Payment Information,-0.8,-0.867,0.067,0.252,0.264,0.9,0.055
-68,"My Face
- in the Background of Someone Else","Pupil Dialation
- (to assess excitement)",-0.8,-1.111,0.311,0.252,1.234,0.9,0.258
-69,"Near-Nudity
- (Accidental)","Near-Nudity
- (Intentional)",-1.622,-1.0,-0.622,0.252,-2.468,0.468,-0.516
-70,"Near-Nudity
- (Accidental)","Object 
- (License)",-1.622,-1.733,0.111,0.252,0.441,0.9,0.092
-71,"Near-Nudity
- (Accidental)","Object 
- (Meds)",-1.622,-1.444,-0.178,0.252,-0.705,0.9,-0.147
-72,"Near-Nudity
- (Accidental)","Object 
- (Mess)",-1.622,-0.489,-1.133,0.252,-4.495,0.001,-0.939
-73,"Near-Nudity
- (Accidental)","Object 
- (Sexual)",-1.622,-1.667,0.044,0.252,0.176,0.9,0.037
-74,"Near-Nudity
- (Accidental)","Other Faces
- in the Background",-1.622,-0.333,-1.289,0.252,-5.112,0.001,-1.068
-75,"Near-Nudity
- (Accidental)",Payment Information,-1.622,-0.867,-0.756,0.252,-2.996,0.585,-0.626
-76,"Near-Nudity
- (Accidental)","Pupil Dialation
- (to assess excitement)",-1.622,-1.111,-0.511,0.252,-2.027,0.5,-0.424
-77,"Near-Nudity
+ (License)",False,True,4.195235392680606,88.0,two-sided,6.487371778876153e-05,0.006811740367819961,bonf,324.695,0.8768740186466698
+67,question,"My Face
+ in the Background of Someone Else",Location,False,True,-1.5042796092672208,88.0,two-sided,0.1360900974389701,1.0,bonf,0.594,-0.31441947416055616
+68,question,"My Face
+ in the Background of Someone Else",Payment Information,False,True,0.24188972342344828,88.0,two-sided,0.8094284100489246,1.0,bonf,0.227,0.05055897798195345
+69,question,"My Face
+ (for Improving the App)","Near-Nudity
+ (Intentional)",False,True,2.2661523968786743,88.0,two-sided,0.025894599423599552,1.0,bonf,2.044,0.4736635666698743
+70,question,"My Face
+ (for Improving the App)","Near-Nudity
+ (Accidental)",False,True,5.348957838402519,88.0,two-sided,6.925286902369185e-07,7.271551247487644e-05,bonf,1.946e+04,1.1180212112805061
+71,question,"My Face
+ (for Improving the App)","Object 
+ (Meds)",False,True,4.603701652514435,88.0,two-sided,1.3892262803353149e-05,0.0014586875943520808,bonf,1282.96,0.9622502650825593
+72,question,"My Face
+ (for Improving the App)","Object 
+ (Sexual)",False,True,5.788829633285708,88.0,two-sided,1.0728224177391677e-07,1.126463538626126e-05,bonf,1.081e+05,1.2099617372260811
+73,question,"My Face
+ (for Improving the App)","Object 
+ (Mess)",False,True,0.35803135759675875,88.0,two-sided,0.7211772245890654,1.0,bonf,0.234,0.07483451247697233
+74,question,"My Face
+ (for Improving the App)","Object 
+ (License)",False,True,6.338978498293435,88.0,two-sided,9.618506736330932e-09,1.009943207314748e-06,bonf,1.013e+06,1.3249520061761593
+75,question,"My Face
+ (for Improving the App)",Location,False,True,0.0,88.0,two-sided,1.0,1.0,bonf,0.221,0.0
+76,question,"My Face
+ (for Improving the App)",Payment Information,False,True,1.7549928774784243,88.0,two-sided,0.08274089273241017,1.0,bonf,0.847,0.3668227198539821
+77,question,"Near-Nudity
+ (Intentional)","Near-Nudity
+ (Accidental)",False,True,2.5643082314850068,88.0,two-sided,0.012033840177607549,1.0,bonf,3.762,0.5359830983296109
+78,question,"Near-Nudity
  (Intentional)","Object 
- (License)",-1.0,-1.733,0.733,0.252,2.908,0.568,0.608
-78,"Near-Nudity
+ (Meds)",False,True,1.8432806074180341,88.0,two-sided,0.06865432112187646,1.0,bonf,0.971,0.38527632478981166
+79,question,"Near-Nudity
  (Intentional)","Object 
- (Meds)",-1.0,-1.444,0.444,0.252,1.763,0.9,0.368
-79,"Near-Nudity
+ (Sexual)",False,True,2.854496128592251,88.0,two-sided,0.005374599829902211,0.5643329821397322,bonf,7.27,0.5966371984411343
+80,question,"Near-Nudity
  (Intentional)","Object 
- (Mess)",-1.0,-0.489,-0.511,0.252,-2.027,0.5,-0.424
-80,"Near-Nudity
+ (Mess)",False,True,-1.9556367967934958,88.0,two-sided,0.05368056691200627,1.0,bonf,1.167,-0.4087606383206753
+81,question,"Near-Nudity
  (Intentional)","Object 
- (Sexual)",-1.0,-1.667,0.667,0.252,2.644,0.342,0.553
-81,"Near-Nudity
- (Intentional)","Other Faces
- in the Background",-1.0,-0.333,-0.667,0.252,-2.644,0.342,-0.553
-82,"Near-Nudity
- (Intentional)",Payment Information,-1.0,-0.867,-0.133,0.252,-0.529,0.9,-0.111
-83,"Near-Nudity
- (Intentional)","Pupil Dialation
- (to assess excitement)",-1.0,-1.111,0.111,0.252,0.441,0.9,0.092
-84,"Object 
- (License)","Object 
- (Meds)",-1.733,-1.444,-0.289,0.252,-1.146,0.9,-0.239
-85,"Object 
- (License)","Object 
- (Mess)",-1.733,-0.489,-1.244,0.252,-4.935,0.001,-1.032
-86,"Object 
- (License)","Object 
- (Sexual)",-1.733,-1.667,-0.067,0.252,-0.264,0.9,-0.055
-87,"Object 
- (License)","Other Faces
- in the Background",-1.733,-0.333,-1.4,0.252,-5.552,0.001,-1.161
-88,"Object 
- (License)",Payment Information,-1.733,-0.867,-0.867,0.252,-3.437,0.669,-0.718
-89,"Object 
- (License)","Pupil Dialation
- (to assess excitement)",-1.733,-1.111,-0.622,0.252,-2.468,0.468,-0.516
-90,"Object 
+ (License)",False,True,3.250152621569034,88.0,two-sided,0.0016348728374474394,0.17166164793198113,bonf,19.7,0.679335990410115
+82,question,"Near-Nudity
+ (Intentional)",Location,False,True,-2.234188138598775,88.0,two-sided,0.028004615423617832,1.0,bonf,1.923,-0.46698250470613883
+83,question,"Near-Nudity
+ (Intentional)",Payment Information,False,True,-0.47933809889766754,88.0,two-sided,0.6328872032172317,1.0,bonf,0.244,-0.10018964032487428
+84,question,"Near-Nudity
+ (Accidental)","Object 
+ (Meds)",False,True,-0.8861580409947384,88.0,two-sided,0.37794761309073854,1.0,bonf,0.312,-0.1852217789540076
+85,question,"Near-Nudity
+ (Accidental)","Object 
+ (Sexual)",False,True,0.2321390718586704,88.0,two-sided,0.8169689976324133,1.0,bonf,0.226,0.04852092952418455
+86,question,"Near-Nudity
+ (Accidental)","Object 
+ (Mess)",False,True,-5.047503636974578,88.0,two-sided,2.3919370313509453e-06,0.00025115338829184925,bonf,6284.077,-1.0550122660601189
+87,question,"Near-Nudity
+ (Accidental)","Object 
+ (License)",False,True,0.6114697942771928,88.0,two-sided,0.5424650470246927,1.0,bonf,0.26,0.12780736373562426
+88,question,"Near-Nudity
+ (Accidental)",Location,False,True,-5.248383541751166,88.0,two-sided,1.0511142500239522e-06,0.00011036699625251498,bonf,1.329e+04,-1.0969995094157905
+89,question,"Near-Nudity
+ (Accidental)",Payment Information,False,True,-3.0978994709440575,88.0,two-sided,0.0026159124341174054,0.2746708055823276,bonf,13.248,-0.6475125479703732
+90,question,"Object 
  (Meds)","Object 
- (Mess)",-1.444,-0.489,-0.956,0.252,-3.79,0.669,-0.792
-91,"Object 
+ (Sexual)",False,True,1.1726039399558579,88.0,two-sided,0.24411917407466738,1.0,bonf,0.404,0.24509373917467162
+91,question,"Object 
  (Meds)","Object 
- (Sexual)",-1.444,-1.667,0.222,0.252,0.881,0.9,0.184
-92,"Object 
- (Meds)","Other Faces
- in the Background",-1.444,-0.333,-1.111,0.252,-4.407,0.669,-0.921
-93,"Object 
- (Meds)",Payment Information,-1.444,-0.867,-0.578,0.252,-2.291,0.5,-0.479
-94,"Object 
- (Meds)","Pupil Dialation
- (to assess excitement)",-1.444,-1.111,-0.333,0.252,-1.322,0.9,-0.276
-95,"Object 
+ (Mess)",False,True,-4.287351482951242,88.0,two-sided,4.615163720186879e-05,0.004845921906196223,bonf,439.154,-0.8961278146073345
+92,question,"Object 
+ (Meds)","Object 
+ (License)",False,True,1.6079600324401402,88.0,two-sided,0.11142607002217246,1.0,bonf,0.684,0.33609040816374536
+93,question,"Object 
+ (Meds)",Location,False,True,-4.515929747629213,88.0,two-sided,1.947513523602238e-05,0.00204488919978235,bonf,947.838,-0.9439044761680068
+94,question,"Object 
+ (Meds)",Payment Information,False,True,-2.3838714205977385,88.0,two-sided,0.019280986645086602,1.0,bonf,2.58,-0.4982688018325528
+95,question,"Object 
+ (Sexual)","Object 
+ (Mess)",False,True,-5.486466544923342,88.0,two-sided,3.892210485625357e-07,4.0868210099066246e-05,bonf,3.299e+04,-1.1467628195097348
+96,question,"Object 
+ (Sexual)","Object 
+ (License)",False,True,0.3936109468304821,88.0,two-sided,0.6948203688082984,1.0,bonf,0.236,0.08227123878024607
+97,question,"Object 
+ (Sexual)",Location,False,True,-5.670436151994497,88.0,two-sided,1.7829997452128873e-07,1.8721497324735317e-05,bonf,6.764e+04,-1.1852155292057824
+98,question,"Object 
+ (Sexual)",Payment Information,False,True,-3.4065225090105606,88.0,two-sided,0.0009936315273115968,0.10433131036771766,bonf,30.104,-0.7120198993596356
+99,question,"Object 
  (Mess)","Object 
- (Sexual)",-0.489,-1.667,1.178,0.252,4.671,0.001,0.976
-96,"Object 
- (Mess)","Other Faces
- in the Background",-0.489,-0.333,-0.156,0.252,-0.617,0.9,-0.129
-97,"Object 
- (Mess)",Payment Information,-0.489,-0.867,0.378,0.252,1.498,0.9,0.313
-98,"Object 
- (Mess)","Pupil Dialation
- (to assess excitement)",-0.489,-1.111,0.622,0.252,2.468,0.468,0.516
-99,"Object 
- (Sexual)","Other Faces
- in the Background",-1.667,-0.333,-1.333,0.252,-5.288,0.001,-1.105
-100,"Object 
- (Sexual)",Payment Information,-1.667,-0.867,-0.8,0.252,-3.173,0.69,-0.663
-101,"Object 
- (Sexual)","Pupil Dialation
- (to assess excitement)",-1.667,-1.111,-0.556,0.252,-2.203,0.5,-0.461
-102,"Other Faces
- in the Background",Payment Information,-0.333,-0.867,0.533,0.252,2.115,0.5,0.442
-103,"Other Faces
- in the Background","Pupil Dialation
- (to assess excitement)",-0.333,-1.111,0.778,0.252,3.085,0.73,0.645
-104,Payment Information,"Pupil Dialation
- (to assess excitement)",-0.867,-1.111,0.244,0.252,0.969,0.9,0.203
+ (License)",False,True,6.040231766122199,88.0,two-sided,3.599053315389714e-08,3.7790059811591996e-06,bonf,2.969e+05,1.2625089670910112
+100,question,"Object 
+ (Mess)",Location,False,True,-0.35230452271832313,88.0,two-sided,0.7254522344711676,1.0,bonf,0.233,-0.07363750867529269
+101,question,"Object 
+ (Mess)",Payment Information,False,True,1.43910033423211,88.0,two-sided,0.1536696371054522,1.0,bonf,0.547,0.3007959208952899
+102,question,"Object 
+ (License)",Location,False,True,-6.199027955918032,88.0,two-sided,1.7896514503008877e-08,1.8791340228159321e-06,bonf,5.682e+05,-1.2957000136136898
+103,question,"Object 
+ (License)",Payment Information,False,True,-3.8184279693170513,88.0,two-sided,0.00024951078367953965,0.026198632286351664,bonf,99.362,-0.7981149959331493
+104,question,Location,Payment Information,False,True,1.7304463136556547,88.0,two-sided,0.08705592638610027,1.0,bonf,0.816,0.3616920794849596

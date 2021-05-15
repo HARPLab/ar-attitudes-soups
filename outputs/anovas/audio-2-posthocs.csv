@@ -1,2 +1,2 @@
-,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
-0,Background Audio,Intentional Audio,-1.111,0.156,-1.267,0.29,-4.37,0.001,-0.913
+,Contrast,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
+0,question,Intentional Audio,Background Audio,False,True,4.36994813476174,88.0,two-sided,3.3887622430877526e-05,578.017,0.9133918894971952

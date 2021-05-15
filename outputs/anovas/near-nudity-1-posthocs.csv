@@ -1,4 +1,4 @@
-,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
-0,"Near-Nudity
- (Accidental)","Near-Nudity
- (Intentional)",-1.689,-0.844,-0.844,0.22,-3.844,0.001,-0.803
+,Contrast,A,B,Paired,Parametric,T,dof,Tail,p-unc,BF10,hedges
+0,question,"Near-Nudity
+ (Intentional)","Near-Nudity
+ (Accidental)",False,True,3.8439320953274354,88.0,two-sided,0.00022831814476362896,107.365,0.8034457827361532

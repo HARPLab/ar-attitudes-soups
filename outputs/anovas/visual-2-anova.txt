@@ -1,51 +1,51 @@
 visual
      Source  ddof1  ddof2          F         p-unc       np2
 0  question      9    440  10.709118  4.428269e-15  0.179689
-                                              A  ... hedges
-0             My Face\n (for Improving the App)  ...  0.357
-1             My Face\n (for Improving the App)  ...  1.090
-2             My Face\n (for Improving the App)  ...  0.535
-3             My Face\n (for Improving the App)  ...  1.189
-4             My Face\n (for Improving the App)  ...  0.931
-5             My Face\n (for Improving the App)  ...  0.079
-6             My Face\n (for Improving the App)  ...  1.129
-7             My Face\n (for Improving the App)  ... -0.059
-8             My Face\n (for Improving the App)  ...  0.634
-9   My Face\n in the Background of Someone Else  ...  0.733
-10  My Face\n in the Background of Someone Else  ...  0.178
-11  My Face\n in the Background of Someone Else  ...  0.832
-12  My Face\n in the Background of Someone Else  ...  0.575
-13  My Face\n in the Background of Someone Else  ... -0.277
-14  My Face\n in the Background of Someone Else  ...  0.773
-15  My Face\n in the Background of Someone Else  ... -0.416
-16  My Face\n in the Background of Someone Else  ...  0.277
-17                   Near-Nudity\n (Accidental)  ... -0.555
-18                   Near-Nudity\n (Accidental)  ...  0.099
-19                   Near-Nudity\n (Accidental)  ... -0.158
-20                   Near-Nudity\n (Accidental)  ... -1.010
-21                   Near-Nudity\n (Accidental)  ...  0.040
-22                   Near-Nudity\n (Accidental)  ... -1.149
-23                   Near-Nudity\n (Accidental)  ... -0.456
-24                  Near-Nudity\n (Intentional)  ...  0.654
-25                  Near-Nudity\n (Intentional)  ...  0.396
-26                  Near-Nudity\n (Intentional)  ... -0.456
-27                  Near-Nudity\n (Intentional)  ...  0.594
-28                  Near-Nudity\n (Intentional)  ... -0.594
-29                  Near-Nudity\n (Intentional)  ...  0.099
-30                          Object \n (License)  ... -0.258
-31                          Object \n (License)  ... -1.109
-32                          Object \n (License)  ... -0.059
-33                          Object \n (License)  ... -1.248
-34                          Object \n (License)  ... -0.555
-35                             Object \n (Meds)  ... -0.852
-36                             Object \n (Meds)  ...  0.198
-37                             Object \n (Meds)  ... -0.991
-38                             Object \n (Meds)  ... -0.297
-39                             Object \n (Mess)  ...  1.050
-40                             Object \n (Mess)  ... -0.139
-41                             Object \n (Mess)  ...  0.555
-42                           Object \n (Sexual)  ... -1.189
-43                           Object \n (Sexual)  ... -0.495
-44              Other Faces\n in the Background  ...  0.693
+    Contrast                                            A  ...       BF10    hedges
+0   question     Pupil Dialation\n (to assess excitement)  ...      9.446 -0.619286
+1   question     Pupil Dialation\n (to assess excitement)  ...      0.431 -0.258141
+2   question     Pupil Dialation\n (to assess excitement)  ...      9.098 -0.616085
+3   question     Pupil Dialation\n (to assess excitement)  ...       0.24 -0.091183
+4   question     Pupil Dialation\n (to assess excitement)  ...      2.449  0.492873
+5   question     Pupil Dialation\n (to assess excitement)  ...      0.632  0.324004
+6   question     Pupil Dialation\n (to assess excitement)  ...      4.967  0.562284
+7   question     Pupil Dialation\n (to assess excitement)  ...      4.247 -0.547588
+8   question     Pupil Dialation\n (to assess excitement)  ...     15.157  0.658454
+9   question              Other Faces\n in the Background  ...      0.732  0.346174
+10  question              Other Faces\n in the Background  ...      0.227  0.051175
+11  question              Other Faces\n in the Background  ...      2.387  0.490187
+12  question              Other Faces\n in the Background  ...   8799.533  1.074011
+13  question              Other Faces\n in the Background  ...     772.51  0.931370
+14  question              Other Faces\n in the Background  ...  3.595e+04  1.151392
+15  question              Other Faces\n in the Background  ...      0.256  0.120882
+16  question              Other Faces\n in the Background  ...  2.256e+05  1.248323
+17  question  My Face\n in the Background of Someone Else  ...      0.612 -0.319010
+18  question  My Face\n in the Background of Someone Else  ...      0.279  0.152286
+19  question  My Face\n in the Background of Someone Else  ...     32.128  0.716925
+20  question  My Face\n in the Background of Someone Else  ...      5.147  0.565572
+21  question  My Face\n in the Background of Someone Else  ...     83.307  0.785883
+22  question  My Face\n in the Background of Someone Else  ...      0.417 -0.251427
+23  question  My Face\n in the Background of Someone Else  ...    324.695  0.876874
+24  question            My Face\n (for Improving the App)  ...      2.044  0.473664
+25  question            My Face\n (for Improving the App)  ...  1.946e+04  1.118021
+26  question            My Face\n (for Improving the App)  ...    1282.96  0.962250
+27  question            My Face\n (for Improving the App)  ...  1.081e+05  1.209962
+28  question            My Face\n (for Improving the App)  ...      0.234  0.074835
+29  question            My Face\n (for Improving the App)  ...  1.013e+06  1.324952
+30  question                  Near-Nudity\n (Intentional)  ...      3.762  0.535983
+31  question                  Near-Nudity\n (Intentional)  ...      0.971  0.385276
+32  question                  Near-Nudity\n (Intentional)  ...       7.27  0.596637
+33  question                  Near-Nudity\n (Intentional)  ...      1.167 -0.408761
+34  question                  Near-Nudity\n (Intentional)  ...       19.7  0.679336
+35  question                   Near-Nudity\n (Accidental)  ...      0.312 -0.185222
+36  question                   Near-Nudity\n (Accidental)  ...      0.226  0.048521
+37  question                   Near-Nudity\n (Accidental)  ...   6284.077 -1.055012
+38  question                   Near-Nudity\n (Accidental)  ...       0.26  0.127807
+39  question                             Object \n (Meds)  ...      0.404  0.245094
+40  question                             Object \n (Meds)  ...    439.154 -0.896128
+41  question                             Object \n (Meds)  ...      0.684  0.336090
+42  question                           Object \n (Sexual)  ...  3.299e+04 -1.146763
+43  question                           Object \n (Sexual)  ...      0.236  0.082271
+44  question                             Object \n (Mess)  ...  2.969e+05  1.262509
 
-[45 rows x 9 columns]
+[45 rows x 13 columns]

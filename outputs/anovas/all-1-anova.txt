@@ -1,17 +1,17 @@
 all
      Source  ddof1  ddof2          F         p-unc      np2
 0  question     14    660  11.473601  7.002121e-24  0.19574
-                                   A  ... hedges
-0                   Background Audio  ... -0.950
-1                   Background Audio  ... -0.932
-2                   Background Audio  ... -1.043
-3                   Background Audio  ... -1.565
-4                   Background Audio  ... -0.410
-..                               ...  ...    ...
-100               Object \n (Sexual)  ... -0.857
-101               Object \n (Sexual)  ... -0.801
-102  Other Faces\n in the Background  ... -0.168
-103  Other Faces\n in the Background  ... -0.112
-104              Payment Information  ...  0.056
+     Contrast                                   A  ...       BF10    hedges
+0    question  My Face\n (for core functionality)  ...       3.58  0.531152
+1    question  My Face\n (for core functionality)  ...  1.303e+08  1.561885
+2    question  My Face\n (for core functionality)  ...    161.407  0.831065
+3    question  My Face\n (for core functionality)  ...    690.441  0.924437
+4    question  My Face\n (for core functionality)  ...   6379.056  1.055863
+..        ...                                 ...  ...        ...       ...
+100  question                    Object \n (Mess)  ...      0.247 -0.106337
+101  question                    Object \n (Mess)  ...      0.255  0.120212
+102  question                 Object \n (License)  ...   6449.199 -1.056483
+103  question                 Object \n (License)  ...     68.509 -0.772132
+104  question                            Location  ...      0.353  0.216201
 
-[105 rows x 9 columns]
+[105 rows x 13 columns]

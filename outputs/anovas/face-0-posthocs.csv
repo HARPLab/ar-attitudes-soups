@@ -1,19 +1,19 @@
-,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
-0,"My Face
- (for Improving the App)","My Face
- (for core functionality)",-0.022,0.511,-0.533,0.271,-1.97,0.2,-0.412
-1,"My Face
- (for Improving the App)","My Face
- in the Background of Someone Else",-0.022,-0.933,0.911,0.271,3.366,0.004,0.703
-2,"My Face
- (for Improving the App)","Other Faces
- in the Background",-0.022,-0.8,0.778,0.271,2.873,0.022,0.601
-3,"My Face
+,Contrast,A,B,Paired,Parametric,T,dof,Tail,p-unc,p-corr,p-adjust,BF10,hedges
+0,question,"My Face
  (for core functionality)","My Face
- in the Background of Someone Else",0.511,-0.933,1.444,0.271,5.336,0.001,1.115
-4,"My Face
+ (for Improving the App)",False,True,1.9625676376937422,88.0,two-sided,0.0528555577384465,0.31713334643067903,bonf,1.181,0.41020929941926426
+1,question,"My Face
+ (for core functionality)","My Face
+ in the Background of Someone Else",False,True,5.355316977744614,88.0,two-sided,6.744156774966584e-07,4.04649406497995e-06,bonf,1.994e+04,1.1193503772385753
+2,question,"My Face
  (for core functionality)","Other Faces
- in the Background",0.511,-0.8,1.311,0.271,4.843,0.001,1.012
-5,"My Face
+ in the Background",False,True,4.8209834721607105,88.0,two-sided,5.9320267603407425e-06,3.5592160562044455e-05,bonf,2760.151,1.007665781624135
+3,question,"My Face
+ (for Improving the App)","My Face
+ in the Background of Someone Else",False,True,3.3811003028769155,88.0,two-sided,0.0010785268468981046,0.006471161081388628,bonf,28.067,0.7067062351742681
+4,question,"My Face
+ (for Improving the App)","Other Faces
+ in the Background",False,True,2.8625128703833576,88.0,two-sided,0.005251935910585187,0.031511615463511125,bonf,7.41,0.5983128308986322
+5,question,"My Face
  in the Background of Someone Else","Other Faces
- in the Background",-0.933,-0.8,-0.133,0.271,-0.493,0.9,-0.103
+ in the Background",False,True,-0.4944132324730441,88.0,two-sided,0.6222463834493145,1.0,bonf,0.246,-0.10334059413855988

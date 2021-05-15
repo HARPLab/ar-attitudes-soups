@@ -256,7 +256,7 @@ def make_anova_context(df, cols, title, fn, cid):
         # Verify that subjects is legit
         # print(df[subject_id])
 
-        posthocs = df.pairwise_tukey(dv='value', between='question').round(3)
+        posthocs = df.pairwise_ttests(dv='value', between='question', padjust='bonf')
         # pg.print_table(posthocs)
         anova_text = anova_text + "\n" + str(posthocs)
         posthocs.to_csv(FILENAME_ANOVAS + fn + '-posthocs.csv')
