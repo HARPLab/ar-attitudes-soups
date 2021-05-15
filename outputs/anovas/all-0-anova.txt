@@ -1,0 +1,17 @@
+all
+     Source  ddof1  ddof2          F         p-unc       np2
+0  question     14    660  13.575291  1.373538e-28  0.223579
+                                   A  ... hedges
+0                   Background Audio  ... -1.109
+1                   Background Audio  ... -0.831
+2                   Background Audio  ... -1.182
+3                   Background Audio  ... -1.626
+4                   Background Audio  ... -0.425
+..                               ...  ...    ...
+100               Object \n (Sexual)  ... -0.998
+101               Object \n (Sexual)  ... -0.831
+102  Other Faces\n in the Background  ... -0.240
+103  Other Faces\n in the Background  ... -0.074
+104              Payment Information  ...  0.166
+
+[105 rows x 9 columns]

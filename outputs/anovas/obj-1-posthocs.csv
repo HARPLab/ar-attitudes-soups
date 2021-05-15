@@ -1,0 +1,19 @@
+,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
+0,"Object 
+ (License)","Object 
+ (Meds)",-1.6,-1.267,-0.333,0.214,-1.555,0.406,-0.325
+1,"Object 
+ (License)","Object 
+ (Mess)",-1.6,-0.533,-1.067,0.214,-4.975,0.001,-1.04
+2,"Object 
+ (License)","Object 
+ (Sexual)",-1.6,-1.711,0.111,0.214,0.518,0.9,0.108
+3,"Object 
+ (Meds)","Object 
+ (Mess)",-1.267,-0.533,-0.733,0.214,-3.42,0.004,-0.715
+4,"Object 
+ (Meds)","Object 
+ (Sexual)",-1.267,-1.711,0.444,0.214,2.073,0.163,0.433
+5,"Object 
+ (Mess)","Object 
+ (Sexual)",-0.533,-1.711,1.178,0.214,5.493,0.001,1.148

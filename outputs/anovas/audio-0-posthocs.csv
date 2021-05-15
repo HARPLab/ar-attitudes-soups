@@ -1,0 +1,2 @@
+,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
+0,Background Audio,Intentional Audio,-1.444,-0.111,-1.333,0.246,-5.426,0.001,-1.134

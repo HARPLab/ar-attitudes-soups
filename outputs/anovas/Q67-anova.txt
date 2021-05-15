@@ -1,6 +1,4 @@
 Object 
  (Meds)
-    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
-0  context      2     88  3.542373  ...  0.770644       False  0.702384  0.000503
-
-[1 rows x 11 columns]
+    Source  ddof1  ddof2         F     p-unc       np2
+0  context      2    132  0.378738  0.685467  0.005706

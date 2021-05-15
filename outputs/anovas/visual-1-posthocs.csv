@@ -1,0 +1,136 @@
+,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
+0,"My Face
+ (for Improving the App)","My Face
+ in the Background of Someone Else",-0.267,-1.022,0.756,0.238,3.176,0.655,0.664
+1,"My Face
+ (for Improving the App)","Near-Nudity
+ (Accidental)",-0.267,-1.689,1.422,0.238,5.979,0.001,1.25
+2,"My Face
+ (for Improving the App)","Near-Nudity
+ (Intentional)",-0.267,-0.844,0.578,0.238,2.429,0.565,0.508
+3,"My Face
+ (for Improving the App)","Object 
+ (License)",-0.267,-1.6,1.333,0.238,5.605,0.001,1.172
+4,"My Face
+ (for Improving the App)","Object 
+ (Meds)",-0.267,-1.267,1.0,0.238,4.204,0.655,0.879
+5,"My Face
+ (for Improving the App)","Object 
+ (Mess)",-0.267,-0.533,0.267,0.238,1.121,0.9,0.234
+6,"My Face
+ (for Improving the App)","Object 
+ (Sexual)",-0.267,-1.711,1.444,0.238,6.073,0.001,1.269
+7,"My Face
+ (for Improving the App)","Other Faces
+ in the Background",-0.267,-0.889,0.622,0.238,2.616,0.655,0.547
+8,"My Face
+ (for Improving the App)","Pupil Dialation
+ (to assess excitement)",-0.267,-0.756,0.489,0.238,2.055,0.5,0.43
+9,"My Face
+ in the Background of Someone Else","Near-Nudity
+ (Accidental)",-1.022,-1.689,0.667,0.238,2.803,0.655,0.586
+10,"My Face
+ in the Background of Someone Else","Near-Nudity
+ (Intentional)",-1.022,-0.844,-0.178,0.238,-0.747,0.9,-0.156
+11,"My Face
+ in the Background of Someone Else","Object 
+ (License)",-1.022,-1.6,0.578,0.238,2.429,0.565,0.508
+12,"My Face
+ in the Background of Someone Else","Object 
+ (Meds)",-1.022,-1.267,0.244,0.238,1.028,0.9,0.215
+13,"My Face
+ in the Background of Someone Else","Object 
+ (Mess)",-1.022,-0.533,-0.489,0.238,-2.055,0.5,-0.43
+14,"My Face
+ in the Background of Someone Else","Object 
+ (Sexual)",-1.022,-1.711,0.689,0.238,2.896,0.655,0.605
+15,"My Face
+ in the Background of Someone Else","Other Faces
+ in the Background",-1.022,-0.889,-0.133,0.238,-0.561,0.9,-0.117
+16,"My Face
+ in the Background of Someone Else","Pupil Dialation
+ (to assess excitement)",-1.022,-0.756,-0.267,0.238,-1.121,0.9,-0.234
+17,"Near-Nudity
+ (Accidental)","Near-Nudity
+ (Intentional)",-1.689,-0.844,-0.844,0.238,-3.55,0.655,-0.742
+18,"Near-Nudity
+ (Accidental)","Object 
+ (License)",-1.689,-1.6,-0.089,0.238,-0.374,0.9,-0.078
+19,"Near-Nudity
+ (Accidental)","Object 
+ (Meds)",-1.689,-1.267,-0.422,0.238,-1.775,0.5,-0.371
+20,"Near-Nudity
+ (Accidental)","Object 
+ (Mess)",-1.689,-0.533,-1.156,0.238,-4.858,0.001,-1.015
+21,"Near-Nudity
+ (Accidental)","Object 
+ (Sexual)",-1.689,-1.711,0.022,0.238,0.093,0.9,0.02
+22,"Near-Nudity
+ (Accidental)","Other Faces
+ in the Background",-1.689,-0.889,-0.8,0.238,-3.363,0.655,-0.703
+23,"Near-Nudity
+ (Accidental)","Pupil Dialation
+ (to assess excitement)",-1.689,-0.756,-0.933,0.238,-3.924,0.655,-0.82
+24,"Near-Nudity
+ (Intentional)","Object 
+ (License)",-0.844,-1.6,0.756,0.238,3.176,0.655,0.664
+25,"Near-Nudity
+ (Intentional)","Object 
+ (Meds)",-0.844,-1.267,0.422,0.238,1.775,0.5,0.371
+26,"Near-Nudity
+ (Intentional)","Object 
+ (Mess)",-0.844,-0.533,-0.311,0.238,-1.308,0.9,-0.273
+27,"Near-Nudity
+ (Intentional)","Object 
+ (Sexual)",-0.844,-1.711,0.867,0.238,3.644,0.655,0.762
+28,"Near-Nudity
+ (Intentional)","Other Faces
+ in the Background",-0.844,-0.889,0.044,0.238,0.187,0.9,0.039
+29,"Near-Nudity
+ (Intentional)","Pupil Dialation
+ (to assess excitement)",-0.844,-0.756,-0.089,0.238,-0.374,0.9,-0.078
+30,"Object 
+ (License)","Object 
+ (Meds)",-1.6,-1.267,-0.333,0.238,-1.401,0.9,-0.293
+31,"Object 
+ (License)","Object 
+ (Mess)",-1.6,-0.533,-1.067,0.238,-4.484,0.001,-0.937
+32,"Object 
+ (License)","Object 
+ (Sexual)",-1.6,-1.711,0.111,0.238,0.467,0.9,0.098
+33,"Object 
+ (License)","Other Faces
+ in the Background",-1.6,-0.889,-0.711,0.238,-2.99,0.655,-0.625
+34,"Object 
+ (License)","Pupil Dialation
+ (to assess excitement)",-1.6,-0.756,-0.844,0.238,-3.55,0.655,-0.742
+35,"Object 
+ (Meds)","Object 
+ (Mess)",-1.267,-0.533,-0.733,0.238,-3.083,0.655,-0.644
+36,"Object 
+ (Meds)","Object 
+ (Sexual)",-1.267,-1.711,0.444,0.238,1.868,0.5,0.391
+37,"Object 
+ (Meds)","Other Faces
+ in the Background",-1.267,-0.889,-0.378,0.238,-1.588,0.5,-0.332
+38,"Object 
+ (Meds)","Pupil Dialation
+ (to assess excitement)",-1.267,-0.756,-0.511,0.238,-2.149,0.493,-0.449
+39,"Object 
+ (Mess)","Object 
+ (Sexual)",-0.533,-1.711,1.178,0.238,4.951,0.001,1.035
+40,"Object 
+ (Mess)","Other Faces
+ in the Background",-0.533,-0.889,0.356,0.238,1.495,0.5,0.312
+41,"Object 
+ (Mess)","Pupil Dialation
+ (to assess excitement)",-0.533,-0.756,0.222,0.238,0.934,0.9,0.195
+42,"Object 
+ (Sexual)","Other Faces
+ in the Background",-1.711,-0.889,-0.822,0.238,-3.457,0.655,-0.723
+43,"Object 
+ (Sexual)","Pupil Dialation
+ (to assess excitement)",-1.711,-0.756,-0.956,0.238,-4.017,0.655,-0.84
+44,"Other Faces
+ in the Background","Pupil Dialation
+ (to assess excitement)",-0.889,-0.756,-0.133,0.238,-0.561,0.9,-0.117

@@ -1,0 +1,19 @@
+,A,B,mean(A),mean(B),diff,se,T,p-tukey,hedges
+0,"My Face
+ (for Improving the App)","My Face
+ (for core functionality)",-0.4,0.311,-0.711,0.28,-2.543,0.055,-0.532
+1,"My Face
+ (for Improving the App)","My Face
+ in the Background of Someone Else",-0.4,-0.8,0.4,0.28,1.43,0.481,0.299
+2,"My Face
+ (for Improving the App)","Other Faces
+ in the Background",-0.4,-0.333,-0.067,0.28,-0.238,0.9,-0.05
+3,"My Face
+ (for core functionality)","My Face
+ in the Background of Someone Else",0.311,-0.8,1.111,0.28,3.974,0.001,0.831
+4,"My Face
+ (for core functionality)","Other Faces
+ in the Background",0.311,-0.333,0.644,0.28,2.305,0.098,0.482
+5,"My Face
+ in the Background of Someone Else","Other Faces
+ in the Background",-0.8,-0.333,-0.467,0.28,-1.669,0.341,-0.349

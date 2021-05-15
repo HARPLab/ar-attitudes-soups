@@ -1,0 +1,12 @@
+obj
+     Source  ddof1  ddof2          F         p-unc       np2
+0  question      3    176  16.956364  1.016189e-09  0.224222
+                     A                   B  mean(A)  ...      T  p-tukey  hedges
+0  Object \n (License)    Object \n (Meds)   -1.733  ... -1.459    0.463  -0.305
+1  Object \n (License)    Object \n (Mess)   -1.733  ... -6.287    0.001  -1.314
+2  Object \n (License)  Object \n (Sexual)   -1.733  ... -0.337    0.900  -0.070
+3     Object \n (Meds)    Object \n (Mess)   -1.444  ... -4.827    0.001  -1.009
+4     Object \n (Meds)  Object \n (Sexual)   -1.444  ...  1.123    0.710   0.235
+5     Object \n (Mess)  Object \n (Sexual)   -0.489  ...  5.950    0.001   1.244
+
+[6 rows x 9 columns]

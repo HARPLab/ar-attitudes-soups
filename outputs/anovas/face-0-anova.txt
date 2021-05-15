@@ -1,0 +1,12 @@
+face
+     Source  ddof1  ddof2          F         p-unc       np2
+0  question      3    176  12.604798  1.671697e-07  0.176856
+                                             A  ... hedges
+0            My Face\n (for Improving the App)  ... -0.412
+1            My Face\n (for Improving the App)  ...  0.703
+2            My Face\n (for Improving the App)  ...  0.601
+3           My Face\n (for core functionality)  ...  1.115
+4           My Face\n (for core functionality)  ...  1.012
+5  My Face\n in the Background of Someone Else  ... -0.103
+
+[6 rows x 9 columns]

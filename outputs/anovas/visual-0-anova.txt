@@ -1,0 +1,51 @@
+visual
+     Source  ddof1  ddof2          F         p-unc       np2
+0  question      9    440  10.478913  9.762570e-15  0.176508
+                                              A  ... hedges
+0             My Face\n (for Improving the App)  ...  0.786
+1             My Face\n (for Improving the App)  ...  1.399
+2             My Face\n (for Improving the App)  ...  0.748
+3             My Face\n (for Improving the App)  ...  1.361
+4             My Face\n (for Improving the App)  ...  1.093
+5             My Face\n (for Improving the App)  ...  0.364
+6             My Face\n (for Improving the App)  ...  1.457
+7             My Face\n (for Improving the App)  ...  0.671
+8             My Face\n (for Improving the App)  ...  0.594
+9   My Face\n in the Background of Someone Else  ...  0.613
+10  My Face\n in the Background of Someone Else  ... -0.038
+11  My Face\n in the Background of Someone Else  ...  0.575
+12  My Face\n in the Background of Someone Else  ...  0.307
+13  My Face\n in the Background of Someone Else  ... -0.422
+14  My Face\n in the Background of Someone Else  ...  0.671
+15  My Face\n in the Background of Someone Else  ... -0.115
+16  My Face\n in the Background of Someone Else  ... -0.192
+17                   Near-Nudity\n (Accidental)  ... -0.652
+18                   Near-Nudity\n (Accidental)  ... -0.038
+19                   Near-Nudity\n (Accidental)  ... -0.307
+20                   Near-Nudity\n (Accidental)  ... -1.035
+21                   Near-Nudity\n (Accidental)  ...  0.058
+22                   Near-Nudity\n (Accidental)  ... -0.728
+23                   Near-Nudity\n (Accidental)  ... -0.805
+24                  Near-Nudity\n (Intentional)  ...  0.613
+25                  Near-Nudity\n (Intentional)  ...  0.345
+26                  Near-Nudity\n (Intentional)  ... -0.383
+27                  Near-Nudity\n (Intentional)  ...  0.709
+28                  Near-Nudity\n (Intentional)  ... -0.077
+29                  Near-Nudity\n (Intentional)  ... -0.153
+30                          Object \n (License)  ... -0.268
+31                          Object \n (License)  ... -0.997
+32                          Object \n (License)  ...  0.096
+33                          Object \n (License)  ... -0.690
+34                          Object \n (License)  ... -0.767
+35                             Object \n (Meds)  ... -0.728
+36                             Object \n (Meds)  ...  0.364
+37                             Object \n (Meds)  ... -0.422
+38                             Object \n (Meds)  ... -0.498
+39                             Object \n (Mess)  ...  1.093
+40                             Object \n (Mess)  ...  0.307
+41                             Object \n (Mess)  ...  0.230
+42                           Object \n (Sexual)  ... -0.786
+43                           Object \n (Sexual)  ... -0.863
+44              Other Faces\n in the Background  ... -0.077
+
+[45 rows x 9 columns]

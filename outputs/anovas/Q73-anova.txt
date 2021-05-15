@@ -1,4 +1,4 @@
 My Face
  (for core functionality)
-    Source  ddof1  ddof2         F     p-unc       np2       eps
-0  context      2     88  0.929089  0.398752  0.020679  0.945938
+    Source  ddof1  ddof2         F     p-unc       np2
+0  context      2    132  0.269371  0.764278  0.004065

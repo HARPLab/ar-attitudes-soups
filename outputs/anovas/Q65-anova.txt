@@ -1,6 +1,4 @@
 My Face
  (for Improving the App)
-    Source  ddof1  ddof2         F  ...       eps  sphericity   W-spher   p-spher
-0  context      2     88  5.731308  ...  0.875382       False  0.857642  0.036819
-
-[1 rows x 11 columns]
+    Source  ddof1  ddof2         F     p-unc       np2
+0  context      2    132  1.087082  0.340198  0.016204
