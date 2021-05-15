@@ -557,7 +557,7 @@ def make_anova_2way(df, title):
         # Verify that subjects is legit
         # print(df[subject_id])
 
-        posthocs = pg.pairwise_ttests(dv='value', within=['question', 'context'], subject='ResponseId', data=df)
+        posthocs = pg.pairwise_ttests(dv='value', within=['question', 'context'], subject='ResponseId', data=df, padjust='bonf')
         # pg.print_table(posthocs)
         anova_text = anova_text + "\n" + str(posthocs)
         posthocs.to_csv(FILENAME_ANOVAS + fn + '-posthocs.csv')
